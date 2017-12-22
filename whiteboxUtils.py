@@ -33,7 +33,8 @@ from qgis.core import QgsMessageLog, QgsProcessingFeedback
 from processing.core.ProcessingLog import ProcessingLog
 from processing.core.ProcessingConfig import ProcessingConfig
 
-versionRegex = re.compile("([\d.]+)")
+versionRegex = re.compile('([\d.]+)')
+progressRegex = re.compile('\d+')
 
 WHITEBOX_ACTIVE = 'WHITEBOX_ACTIVE'
 WHITEBOX_EXECUTABLE = 'WHITEBOX_EXECUTABLE'
@@ -88,9 +89,15 @@ def execute(commands, feedback=None):
                           stderr=subprocess.STDOUT,
                           universal_newlines=True) as proc:
         try:
-            for line in proc.stdout:
-                feedback.pushConsoleInfo(line)
-                loglines.append(line)
+            for line in iter(proc.stdout.readline, ''):
+                if '%' in line:
+                    try:
+                        feedback.setProgress(int(progressRegex.search(line).group(0)))
+                    except:
+                        pass
+                else:
+                    feedback.pushConsoleInfo(line)
+                    loglines.append(line)
         except:
             pass
 
