@@ -1,7 +1,7 @@
 LidarInfo
 Lidar Info
 Prints information about a LiDAR (LAS) dataset, including header, point return frequency, and classification data and information about the variable length records (VLRs) and geokeys
-QgsProcessingParameterFile|-i|Input LiDAR file|QgsProcessingParameterFile.File|las|None|False
-QgsProcessingParameterBoolean|--vlr|Flag indicating whether or not to print the variable length records (VLRs).|False|False
-QgsProcessingParameterBoolean|--geokeys|Flag indicating whether or not to print the geokeys.|False|False
-QgsProcessingParameterFileDestination|-o|Output HTML file for regression summary report|HTML files (*.html *.HTML)|None|False
+QgsProcessingParameterFile|input|Input LiDAR file|QgsProcessingParameterFile.File|las|None|False
+QgsProcessingParameterBoolean|vlr|Flag indicating whether or not to print the variable length records (VLRs).|False|False
+QgsProcessingParameterBoolean|geokeys|Flag indicating whether or not to print the geokeys.|False|False
+QgsProcessingParameterFileDestination|output|Output HTML file for regression summary report|HTML files (*.html *.HTML)|None|False

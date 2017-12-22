@@ -1,6 +1,6 @@
 DepthInSink
 Depth In Sink
 Measures the depth of sinks (depressions) in a DEM
-QgsProcessingParameterRasterLayer|-i|Input raster DEM file|None|False
-QgsProcessingParameterBoolean|--zero_background|Flag indicating whether the background value of zero should be used.|False|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|dem|Input raster DEM file|None|False
+QgsProcessingParameterBoolean|zero_background|Flag indicating whether the background value of zero should be used.|False|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

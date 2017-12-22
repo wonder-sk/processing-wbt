@@ -34,6 +34,7 @@ from qgis.core import QgsProcessingProvider, QgsMessageLog
 
 from processing.core.ProcessingConfig import ProcessingConfig, Setting
 
+from processing_whitebox.whiteboxAlgorithm import WhiteboxAlgorithm
 from processing_whitebox import whiteboxUtils
 
 pluginPath = os.path.dirname(__file__)
@@ -66,8 +67,8 @@ class WhiteboxProvider(QgsProcessingProvider):
                                             True))
         ProcessingConfig.addSetting(Setting(self.name(),
                                             whiteboxUtils.WHITEBOX_EXECUTABLE,
-                                            self.tr('prepair executable'),
-                                            whiteboxUtils.whiteboxToolsPath(),
+                                            self.tr('Whitebox Tools executable'),
+                                            whiteboxUtils.whiteboxToolsExecutable(),
                                             valuetype=Setting.FILE))
         ProcessingConfig.addSetting(Setting(self.name(),
                                             whiteboxUtils.WHITEBOX_VERBOSE,
@@ -96,9 +97,6 @@ class WhiteboxProvider(QgsProcessingProvider):
 
     def supportedOutputRasterLayerExtensions(self):
         return ['tif', 'flt', 'sdat', 'rdc', 'dep']
-
-    def supportedOutputVectorLayerExtensions(self):
-        pass
 
     def supportsNonFileBasedOutput(self):
         return False

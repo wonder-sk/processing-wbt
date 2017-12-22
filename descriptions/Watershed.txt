@@ -1,7 +1,7 @@
 Watershed
 Watershed
 Identifies the watershed, or drainage basin, draining to a set of target cells
-QgsProcessingParameterRasterLayer|--d8_pntr|Input D8 pointer raster file|None|False
-QgsProcessingParameterRasterLayer|--pour_pts|Input raster pour points (outlet) file|None|False
-QgsProcessingParameterBoolean|--esri_pntr|D8 pointer uses the ESRI style scheme.|False|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|d8_pntr|Input D8 pointer raster file|None|False
+QgsProcessingParameterRasterLayer|pour_pts|Input raster pour points (outlet) file|None|False
+QgsProcessingParameterBoolean|esri_pntr|D8 pointer uses the ESRI style scheme.|False|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

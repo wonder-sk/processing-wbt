@@ -1,6 +1,6 @@
 KappaIndex
 Kappa Index
 Performs a kappa index of agreement (KIA) analysis on two categorical raster files
-QgsProcessingParameterRasterLayer|--i1|Input classification raster file|None|False
-QgsProcessingParameterRasterLayer|--i2|Input reference raster file|None|False
-QgsProcessingParameterFileDestination|-o|Output HTML file|HTML files (*.html *.HTML)|None|False
+QgsProcessingParameterRasterLayer|input1|Input classification raster file|None|False
+QgsProcessingParameterRasterLayer|input2|Input reference raster file|None|False
+QgsProcessingParameterFileDestination|output|Output HTML file|HTML files (*.html *.HTML)|None|False

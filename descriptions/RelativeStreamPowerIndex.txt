@@ -1,7 +1,7 @@
 RelativeStreamPowerIndex
 Relative Stream Power Index
 Calculates the relative stream power index
-QgsProcessingParameterRasterLayer|--sca|Input raster specific contributing area (SCA) file|None|False
-QgsProcessingParameterRasterLayer|--slope|Input raster slope file|None|False
-QgsProcessingParameterNumber|--exponent|SCA exponent value.|QgsProcessingParameterNumber.Double|1.0|False|None|None
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|sca|Input raster specific contributing area (SCA) file|None|False
+QgsProcessingParameterRasterLayer|slope|Input raster slope file|None|False
+QgsProcessingParameterNumber|exponent|SCA exponent value.|QgsProcessingParameterNumber.Double|1.0|False|None|None
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

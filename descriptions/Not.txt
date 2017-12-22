@@ -1,6 +1,6 @@
 Not
 Not
 Performs a logical NOT operator on two Boolean raster images
-QgsProcessingParameterRasterLayer|--input1|Input raster file|None|False
-QgsProcessingParameterRasterLayer|--input2|Input raster file|None|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|input1|Input raster file|None|False
+QgsProcessingParameterRasterLayer|input2|Input raster file|None|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

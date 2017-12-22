@@ -1,7 +1,7 @@
 Subbasins
 Subbasins
 Identifies the catchments, or sub-basin, draining to each link in a stream network
-QgsProcessingParameterRasterLayer|--d8_pntr|Input D8 pointer raster file|None|False
-QgsProcessingParameterRasterLayer|--streams|Input raster streams file|None|False
-QgsProcessingParameterBoolean|--esri_pntr|D8 pointer uses the ESRI style scheme.|False|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|d8_pntr|Input D8 pointer raster file|None|False
+QgsProcessingParameterRasterLayer|streams|Input raster streams file|None|False
+QgsProcessingParameterBoolean|esri_pntr|D8 pointer uses the ESRI style scheme.|False|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

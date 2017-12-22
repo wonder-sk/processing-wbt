@@ -1,10 +1,10 @@
 FD8FlowAccumulation
 F D Flow Accumulation
 Calculates an FD8 flow accumulation raster from an input DEM
-QgsProcessingParameterRasterLayer|-i|Input raster DEM file|None|False
-QgsProcessingParameterEnum|--out_type|Output type; one of 'cells', 'sca' (default), and 'ca'|Cells;Specific Contributing Area;Catchment Area|False|1|False
-QgsProcessingParameterNumber|--exponent|Optional exponent parameter; default is 1.1.|QgsProcessingParameterNumber.Double|1.1|False|None|None
-QgsProcessingParameterNumber|--threshold|Optional convergence threshold parameter, in grid cells; default is inifinity.|QgsProcessingParameterNumber.Double|None|False|None|None
-QgsProcessingParameterBoolean|--log|Optional flag to request the output be log-transformed.|False|False
-QgsProcessingParameterBoolean|--clip|Optional flag to request clipping the display max by 1%.|False|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|dem|Input raster DEM file|None|False
+QgsProcessingParameterEnum|out_type|Output type; one of 'cells', 'sca' (default), and 'ca'|Cells;Specific Contributing Area;Catchment Area|False|1|False
+QgsProcessingParameterNumber|exponent|Optional exponent parameter; default is 1.1.|QgsProcessingParameterNumber.Double|1.1|False|None|None
+QgsProcessingParameterNumber|threshold|Optional convergence threshold parameter, in grid cells; default is inifinity.|QgsProcessingParameterNumber.Double|None|False|None|None
+QgsProcessingParameterBoolean|log|Optional flag to request the output be log-transformed.|False|False
+QgsProcessingParameterBoolean|clip|Optional flag to request clipping the display max by 1%.|False|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

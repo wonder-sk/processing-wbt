@@ -1,6 +1,6 @@
 Truncate
 Truncate
 Truncates the values in a raster to the desired number of decimal places
-QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
-QgsProcessingParameterNumber|--num_decimals|Number of decimals left after truncation (default is zero).|QgsProcessingParameterNumber.Integer|None|False|None|None
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|input|Input raster file|None|False
+QgsProcessingParameterNumber|num_decimals|Number of decimals left after truncation (default is zero).|QgsProcessingParameterNumber.Integer|None|False|None|None
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

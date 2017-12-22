@@ -1,6 +1,6 @@
 WeightedSum
 Weighted Sum
 Performs a weighted-sum overlay on multiple input raster images
-QgsProcessingParameterMultipleLayers|-i|Input raster files|3|None|False
-QgsProcessingParameterString|-w|Weight values, contained in quotes and separated by commas or semicolons|None|False|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterMultipleLayers|inputs|Input raster files|3|None|False
+QgsProcessingParameterString|weights|Weight values, contained in quotes and separated by commas or semicolons|None|False|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

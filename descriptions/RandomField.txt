@@ -1,5 +1,5 @@
 RandomField
 Random Field
 Creates an image containing random values
-QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|base|Input raster file|None|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

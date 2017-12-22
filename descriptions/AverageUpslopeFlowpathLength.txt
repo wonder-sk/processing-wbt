@@ -1,5 +1,5 @@
 AverageUpslopeFlowpathLength
 Average Upslope Flowpath Length
 Measures the average length of all upslope flowpaths draining each grid cell
-QgsProcessingParameterRasterLayer|-i|Input raster DEM file|None|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|dem|Input raster DEM file|None|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

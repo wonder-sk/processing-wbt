@@ -1,8 +1,8 @@
 Hillshade
 Hillshade
 Calculates a hillshade raster from an input DEM
-QgsProcessingParameterRasterLayer|-i|Input raster DEM file|None|False
-QgsProcessingParameterNumber|--azimuth|Illumination source azimuth in degrees.|QgsProcessingParameterNumber.Double|315.0|False|None|None
-QgsProcessingParameterNumber|--altitude|Illumination source altitude in degrees.|QgsProcessingParameterNumber.Double|30.0|False|None|None
-QgsProcessingParameterNumber|--zfactor|Optional multiplier for when the vertical and horizontal units are not the same.|QgsProcessingParameterNumber.Double|1.0|False|None|None
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|dem|Input raster DEM file|None|False
+QgsProcessingParameterNumber|azimuth|Illumination source azimuth in degrees.|QgsProcessingParameterNumber.Double|315.0|False|None|None
+QgsProcessingParameterNumber|altitude|Illumination source altitude in degrees.|QgsProcessingParameterNumber.Double|30.0|False|None|None
+QgsProcessingParameterNumber|zfactor|Optional multiplier for when the vertical and horizontal units are not the same.|QgsProcessingParameterNumber.Double|1.0|False|None|None
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

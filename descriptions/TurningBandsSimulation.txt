@@ -1,7 +1,7 @@
 TurningBandsSimulation
 Turning Bands Simulation
 Creates an image containing random values based on a turning-bands simulation
-QgsProcessingParameterRasterLayer|-i|Input base raster file|None|False
-QgsProcessingParameterNumber|--range|The field's range, in xy-units, related to the extent of spatial autocorrelation.|QgsProcessingParameterNumber.Double|None|False|None|None
-QgsProcessingParameterNumber|--iterations|The number of iterations.|QgsProcessingParameterNumber.Integer|1000|False|None|None
-QgsProcessingParameterRasterDestination|-o|Output file|None|False
+QgsProcessingParameterRasterLayer|base|Input base raster file|None|False
+QgsProcessingParameterNumber|range|The field's range, in xy-units, related to the extent of spatial autocorrelation.|QgsProcessingParameterNumber.Double|None|False|None|None
+QgsProcessingParameterNumber|iterations|The number of iterations.|QgsProcessingParameterNumber.Integer|1000|False|None|None
+QgsProcessingParameterRasterDestination|output|Output file|None|False

@@ -133,7 +133,7 @@ def createDescriptions(descriptionPath):
 
 
 def _fileParameter(param):
-    name = param['flags'][0]
+    name = param['flags'][0].lstrip('-') if len(param['flags']) == 1 else param['flags'][1].lstrip('-')
     description = param['description'][:-1]
     optional = True if param['optional'] == 'true' else False
     parameterType = param['parameter_type']
@@ -158,16 +158,19 @@ def _fileParameter(param):
 
 
 def _multifileParameter(param):
-    name = param['flags'][0]
+    name = param['flags'][0].lstrip('-') if len(param['flags']) == 1 else param['flags'][1].lstrip('-')
     description = param['description'][:-1]
     optional = True if param['optional'] == 'true' else False
     dataType = param['parameter_type']['FileList']
 
-    return 'QgsProcessingParameterMultipleLayers|{}|{}|3|None|False'.format(name, description, optional)
+    if dataType == 'Raster':
+        return 'QgsProcessingParameterMultipleLayers|{}|{}|3|None|False'.format(name, description, optional)
+    else:
+        return None
 
 
 def _enumParameter(param):
-    name = param['flags'][0]
+    name = param['flags'][0].lstrip('-') if len(param['flags']) == 1 else param['flags'][1].lstrip('-')
     description = param['description'][:-1]
     optional = True if param['optional'] == 'true' else False
     options = [v.strip('"') for v in param['parameter_type']['OptionList']]
@@ -176,7 +179,7 @@ def _enumParameter(param):
 
 
 def _booleanParameter(param):
-    name = param['flags'][0]
+    name = param['flags'][0].lstrip('-') if len(param['flags']) == 1 else param['flags'][1].lstrip('-')
     description = param['description']
     optional = True if param['optional'] == 'true' else False
     defaultValue = True if param['default_value'] == 'true' else False
@@ -184,7 +187,7 @@ def _booleanParameter(param):
 
 
 def _numberParameter(param):
-    name = param['flags'][0]
+    name = param['flags'][0].lstrip('-') if len(param['flags']) == 1 else param['flags'][1].lstrip('-')
     description = param['description']
     optional = True if param['optional'] == 'true' else False
     dataType = param['parameter_type']
@@ -197,7 +200,7 @@ def _numberParameter(param):
 
 
 def _stringParameter(param):
-    name = param['flags'][0]
+    name = param['flags'][0].lstrip('-') if len(param['flags']) == 1 else param['flags'][1].lstrip('-')
     description = param['description'][:-1]
     optional = True if param['optional'] == 'true' else False
     defaultValue = param['default_value']
@@ -205,7 +208,7 @@ def _stringParameter(param):
 
 
 def _otherParameter(param):
-    name = param['flags'][0]
+    name = param['flags'][0].lstrip('-') if len(param['flags']) == 1 else param['flags'][1].lstrip('-')
     description = param['description'][:-1]
     optional = True if param['optional'] == 'true' else False
     parameterType = param['parameter_type']
@@ -216,7 +219,7 @@ def _otherParameter(param):
 
 
 def _fileOutput(param):
-    name = param['flags'][0]
+    name = param['flags'][0].lstrip('-') if len(param['flags']) == 1 else param['flags'][1].lstrip('-')
     description = param['description'][:-1]
     optional = True if param['optional'] == 'true' else False
     parameterType = param['parameter_type']

@@ -1,7 +1,7 @@
 StandardDeviationFilter
 Standard Deviation Filter
 Assigns each cell in the output grid the standard deviation of values in a moving window centred on each grid cell in the input raster
-QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
-QgsProcessingParameterNumber|--filterx|Size of the filter kernel in the x-direction.|QgsProcessingParameterNumber.Integer|11|False|None|None
-QgsProcessingParameterNumber|--filtery|Size of the filter kernel in the y-direction.|QgsProcessingParameterNumber.Integer|11|False|None|None
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|input|Input raster file|None|False
+QgsProcessingParameterNumber|filterx|Size of the filter kernel in the x-direction.|QgsProcessingParameterNumber.Integer|11|False|None|None
+QgsProcessingParameterNumber|filtery|Size of the filter kernel in the y-direction.|QgsProcessingParameterNumber.Integer|11|False|None|None
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

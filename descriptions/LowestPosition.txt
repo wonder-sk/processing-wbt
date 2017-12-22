@@ -1,5 +1,5 @@
 LowestPosition
 Lowest Position
 Identifies the stack position of the minimum value within a raster stack on a cell-by-cell basis
-QgsProcessingParameterMultipleLayers|-i|Input raster files|3|None|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterMultipleLayers|inputs|Input raster files|3|None|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

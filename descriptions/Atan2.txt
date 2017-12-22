@@ -1,6 +1,6 @@
 Atan2
 Atan
 Returns the 2-argument inverse tangent (atan2)
-QgsProcessingParameterRasterLayer|--input_y|Input y raster file or constant value (rise)|None|False
-QgsProcessingParameterRasterLayer|--input_x|Input x raster file or constant value (run)|None|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|input_y|Input y raster file or constant value (rise)|None|False
+QgsProcessingParameterRasterLayer|input_x|Input x raster file or constant value (run)|None|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

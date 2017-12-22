@@ -1,5 +1,5 @@
 RootMeanSquareError
 Root Mean Square Error
 Calculates the RMSE and other accuracy statistics
-QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
-QgsProcessingParameterRasterLayer|--base|Input base raster file used for comparison|None|False
+QgsProcessingParameterRasterLayer|input|Input raster file|None|False
+QgsProcessingParameterRasterLayer|base|Input base raster file used for comparison|None|False

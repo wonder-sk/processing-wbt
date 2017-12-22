@@ -1,7 +1,7 @@
 Clump
 Clump
 Groups cells that form physically discrete areas, assigning them unique identifiers
-QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
-QgsProcessingParameterBoolean|--diag|Flag indicating whether diagonal connections should be considered.|True|False
-QgsProcessingParameterBoolean|--zero_back|Flag indicating whether zero values should be treated as a background.|False|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|input|Input raster file|None|False
+QgsProcessingParameterBoolean|diag|Flag indicating whether diagonal connections should be considered.|True|False
+QgsProcessingParameterBoolean|zero_back|Flag indicating whether zero values should be treated as a background.|False|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

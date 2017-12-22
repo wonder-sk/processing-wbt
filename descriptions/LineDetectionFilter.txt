@@ -1,8 +1,8 @@
 LineDetectionFilter
 Line Detection Filter
 Performs a line-detection filter on an image
-QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
-QgsProcessingParameterEnum|--variant|Optional variant value. Options include 'v' (vertical), 'h' (horizontal), '45', and '135' (default is 'v')|vertical;horizontal;45;135|False|0|False
-QgsProcessingParameterBoolean|--absvals|Optional flag indicating whether outputs should be absolute values.|False|False
-QgsProcessingParameterNumber|--clip|Optional amount to clip the distribution tails by, in percent.|QgsProcessingParameterNumber.Double|0.0|False|None|None
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|input|Input raster file|None|False
+QgsProcessingParameterEnum|variant|Optional variant value. Options include 'v' (vertical), 'h' (horizontal), '45', and '135' (default is 'v')|vertical;horizontal;45;135|False|0|False
+QgsProcessingParameterBoolean|absvals|Optional flag indicating whether outputs should be absolute values.|False|False
+QgsProcessingParameterNumber|clip|Optional amount to clip the distribution tails by, in percent.|QgsProcessingParameterNumber.Double|0.0|False|None|None
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

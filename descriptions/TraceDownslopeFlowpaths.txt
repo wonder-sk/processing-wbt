@@ -1,8 +1,8 @@
 TraceDownslopeFlowpaths
 Trace Downslope Flowpaths
 Traces downslope flowpaths from one or more target sites (i.e. seed points)
-QgsProcessingParameterRasterLayer|--seed_pts|Input raster seed points file|None|False
-QgsProcessingParameterRasterLayer|--d8_pntr|Input D8 pointer raster file|None|False
-QgsProcessingParameterBoolean|--esri_pntr|D8 pointer uses the ESRI style scheme.|False|False
-QgsProcessingParameterBoolean|--zero_background|Flag indicating whether a background value of zero should be used.|False|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|seed_pts|Input raster seed points file|None|False
+QgsProcessingParameterRasterLayer|d8_pntr|Input D8 pointer raster file|None|False
+QgsProcessingParameterBoolean|esri_pntr|D8 pointer uses the ESRI style scheme.|False|False
+QgsProcessingParameterBoolean|zero_background|Flag indicating whether a background value of zero should be used.|False|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

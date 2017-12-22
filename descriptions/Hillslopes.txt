@@ -1,7 +1,7 @@
 Hillslopes
 Hillslopes
 Identifies the individual hillslopes draining to each link in a stream network
-QgsProcessingParameterRasterLayer|--d8_pntr|Input raster D8 pointer file|None|False
-QgsProcessingParameterRasterLayer|--streams|Input raster streams file|None|False
-QgsProcessingParameterBoolean|--esri_pntr|D8 pointer uses the ESRI style scheme.|False|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|d8_pntr|Input raster D8 pointer file|None|False
+QgsProcessingParameterRasterLayer|streams|Input raster streams file|None|False
+QgsProcessingParameterBoolean|esri_pntr|D8 pointer uses the ESRI style scheme.|False|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

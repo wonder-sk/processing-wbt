@@ -1,9 +1,9 @@
 LidarTile
 Lidar Tile
 Tiles a LiDAR LAS file into multiple LAS files
-QgsProcessingParameterFile|-i|Input LiDAR file|QgsProcessingParameterFile.File|las|None|False
-QgsProcessingParameterNumber|--width_x|Width of tiles in the X dimension; default 1000.0.|QgsProcessingParameterNumber.Double|1000.0|False|None|None
-QgsProcessingParameterNumber|--width_y|Width of tiles in the Y dimension.|QgsProcessingParameterNumber.Double|1000.0|False|None|None
-QgsProcessingParameterNumber|--origin_x|Origin point X coordinate for tile grid.|QgsProcessingParameterNumber.Double|0.0|False|None|None
-QgsProcessingParameterNumber|--origin_y|Origin point Y coordinate for tile grid.|QgsProcessingParameterNumber.Double|0.0|False|None|None
-QgsProcessingParameterNumber|--min_points|Minimum number of points contained in a tile for it to be saved.|QgsProcessingParameterNumber.Integer|0|False|None|None
+QgsProcessingParameterFile|input|Input LiDAR file|QgsProcessingParameterFile.File|las|None|False
+QgsProcessingParameterNumber|width_x|Width of tiles in the X dimension; default 1000.0.|QgsProcessingParameterNumber.Double|1000.0|False|None|None
+QgsProcessingParameterNumber|width_y|Width of tiles in the Y dimension.|QgsProcessingParameterNumber.Double|1000.0|False|None|None
+QgsProcessingParameterNumber|origin_x|Origin point X coordinate for tile grid.|QgsProcessingParameterNumber.Double|0.0|False|None|None
+QgsProcessingParameterNumber|origin_y|Origin point Y coordinate for tile grid.|QgsProcessingParameterNumber.Double|0.0|False|None|None
+QgsProcessingParameterNumber|min_points|Minimum number of points contained in a tile for it to be saved.|QgsProcessingParameterNumber.Integer|0|False|None|None

@@ -1,6 +1,6 @@
 NormalVectors
 Normal Vectors
 Calculates normal vectors for points within a LAS file and stores these data (XYZ vector components) in the RGB field
-QgsProcessingParameterFile|-i|Input LiDAR file|QgsProcessingParameterFile.File|las|None|False
-QgsProcessingParameterNumber|--radius|Search Radius.|QgsProcessingParameterNumber.Double|1.0|False|None|None
-QgsProcessingParameterFileDestination|-o|Output LiDAR file|LIDAR files (*.las *.LAS)|None|False
+QgsProcessingParameterFile|input|Input LiDAR file|QgsProcessingParameterFile.File|las|None|False
+QgsProcessingParameterNumber|radius|Search Radius.|QgsProcessingParameterNumber.Double|1.0|False|None|None
+QgsProcessingParameterFileDestination|output|Output LiDAR file|LIDAR files (*.las *.LAS)|None|False

@@ -1,8 +1,8 @@
 LidarHillshade
 Lidar Hillshade
 Calculates a hillshade value for points within a LAS file and stores these data in the RGB field
-QgsProcessingParameterFile|-i|Input LiDAR file|QgsProcessingParameterFile.File|las|None|False
-QgsProcessingParameterNumber|--azimuth|Illumination source azimuth in degrees.|QgsProcessingParameterNumber.Double|315.0|False|None|None
-QgsProcessingParameterNumber|--altitude|Illumination source altitude in degrees.|QgsProcessingParameterNumber.Double|30.0|False|None|None
-QgsProcessingParameterNumber|--radius|Search Radius.|QgsProcessingParameterNumber.Double|1.0|False|None|None
-QgsProcessingParameterFileDestination|-o|Output file|LIDAR files (*.las *.LAS)|None|False
+QgsProcessingParameterFile|input|Input LiDAR file|QgsProcessingParameterFile.File|las|None|False
+QgsProcessingParameterNumber|azimuth|Illumination source azimuth in degrees.|QgsProcessingParameterNumber.Double|315.0|False|None|None
+QgsProcessingParameterNumber|altitude|Illumination source altitude in degrees.|QgsProcessingParameterNumber.Double|30.0|False|None|None
+QgsProcessingParameterNumber|radius|Search Radius.|QgsProcessingParameterNumber.Double|1.0|False|None|None
+QgsProcessingParameterFileDestination|output|Output file|LIDAR files (*.las *.LAS)|None|False

@@ -1,6 +1,6 @@
 Centroid
 Centroid
 Calculates the centroid, or average location, of raster polygon objects
-QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
-QgsProcessingParameterBoolean|--text_output|Optional text output.|False|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|input|Input raster file|None|False
+QgsProcessingParameterBoolean|text_output|Optional text output.|False|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

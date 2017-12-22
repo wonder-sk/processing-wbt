@@ -1,5 +1,5 @@
 FillSingleCellPits
 Fill Single Cell Pits
 Raises pit cells to the elevation of their lowest neighbour
-QgsProcessingParameterRasterLayer|-i|Input raster DEM file|None|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|dem|Input raster DEM file|None|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

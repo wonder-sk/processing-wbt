@@ -1,7 +1,7 @@
 BlockMaximum
 Block Maximum
 Creates a block-maximum raster from an input LAS file
-QgsProcessingParameterFile|-i|Input LiDAR file|QgsProcessingParameterFile.File|las|None|False
-QgsProcessingParameterNumber|--resolution|Output raster's grid resolution.|QgsProcessingParameterNumber.Double|1.0|False|None|None
-QgsProcessingParameterString|--palette|Optional palette name (for use with Whitebox raster files)|None|False|False
-QgsProcessingParameterRasterDestination|-o|Output file|None|False
+QgsProcessingParameterFile|input|Input LiDAR file|QgsProcessingParameterFile.File|las|None|False
+QgsProcessingParameterNumber|resolution|Output raster's grid resolution.|QgsProcessingParameterNumber.Double|1.0|False|None|None
+QgsProcessingParameterString|palette|Optional palette name (for use with Whitebox raster files)|None|False|False
+QgsProcessingParameterRasterDestination|output|Output file|None|False

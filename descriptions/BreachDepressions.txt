@@ -1,7 +1,7 @@
 BreachDepressions
 Breach Depressions
 Breaches all of the depressions in a DEM. This should be preferred over depression filling in most cases
-QgsProcessingParameterRasterLayer|-i|Input raster DEM file|None|False
-QgsProcessingParameterNumber|--max_depth|Optional maximum breach depth (default is Inf).|QgsProcessingParameterNumber.Double|None|False|None|None
-QgsProcessingParameterNumber|--max_length|Optional maximum breach channel length (in grid cells; default is Inf).|QgsProcessingParameterNumber.Double|None|False|None|None
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|dem|Input raster DEM file|None|False
+QgsProcessingParameterNumber|max_depth|Optional maximum breach depth (default is Inf).|QgsProcessingParameterNumber.Double|None|False|None|None
+QgsProcessingParameterNumber|max_length|Optional maximum breach channel length (in grid cells; default is Inf).|QgsProcessingParameterNumber.Double|None|False|None|None
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

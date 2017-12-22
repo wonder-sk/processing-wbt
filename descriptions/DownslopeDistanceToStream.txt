@@ -1,6 +1,6 @@
 DownslopeDistanceToStream
 Downslope Distance To Stream
 Measures distance to the nearest downslope stream cell
-QgsProcessingParameterRasterLayer|-i|Input raster DEM file|None|False
-QgsProcessingParameterRasterLayer|--streams|Input raster streams file|None|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|dem|Input raster DEM file|None|False
+QgsProcessingParameterRasterLayer|streams|Input raster streams file|None|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

@@ -1,6 +1,6 @@
 FindRidges
 Find Ridges
 Identifies potential ridge and peak grid cells
-QgsProcessingParameterRasterLayer|-i|Input raster DEM file|None|False
-QgsProcessingParameterBoolean|--line_thin|Optional flag indicating whether post-processing line-thinning should be performed.|True|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|dem|Input raster DEM file|None|False
+QgsProcessingParameterBoolean|line_thin|Optional flag indicating whether post-processing line-thinning should be performed.|True|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

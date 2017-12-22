@@ -1,6 +1,6 @@
 WetnessIndex
 Wetness Index
 Calculates the topographic wetness index, Ln(A / tan(slope))
-QgsProcessingParameterRasterLayer|--sca|Input raster specific contributing area (SCA) file|None|False
-QgsProcessingParameterRasterLayer|--slope|Input raster slope file|None|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|sca|Input raster specific contributing area (SCA) file|None|False
+QgsProcessingParameterRasterLayer|slope|Input raster slope file|None|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

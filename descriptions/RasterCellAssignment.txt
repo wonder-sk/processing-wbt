@@ -1,6 +1,6 @@
 RasterCellAssignment
 Raster Cell Assignment
 Assign row or column number to cells
-QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
-QgsProcessingParameterEnum|-a|Which variable would you like to assign to grid cells? Options include 'column', 'row', 'x', and 'y'|column;row;x;y|False|0|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|input|Input raster file|None|False
+QgsProcessingParameterEnum|assign|Which variable would you like to assign to grid cells? Options include 'column', 'row', 'x', and 'y'|column;row;x;y|False|0|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

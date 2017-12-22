@@ -1,7 +1,7 @@
 CostDistance
 Cost Distance
 Performs cost-distance accumulation on a cost surface and a group of source cells
-QgsProcessingParameterRasterLayer|--source|Input source raster file|None|False
-QgsProcessingParameterRasterLayer|--cost|Input cost (friction) raster file|None|False
-QgsProcessingParameterRasterDestination|--out_accum|Output cost accumulation raster file|None|False
-QgsProcessingParameterRasterDestination|--out_backlink|Output backlink raster file|None|False
+QgsProcessingParameterRasterLayer|source|Input source raster file|None|False
+QgsProcessingParameterRasterLayer|cost|Input cost (friction) raster file|None|False
+QgsProcessingParameterRasterDestination|out_accum|Output cost accumulation raster file|None|False
+QgsProcessingParameterRasterDestination|out_backlink|Output backlink raster file|None|False

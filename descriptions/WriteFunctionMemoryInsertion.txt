@@ -1,7 +1,7 @@
 WriteFunctionMemoryInsertion
 Write Function Memory Insertion
 Performs a write function memory insertion for single-band multi-date change detection
-QgsProcessingParameterRasterLayer|--i1|Input raster file associated with the first date|None|False
-QgsProcessingParameterRasterLayer|--i2|Input raster file associated with the second date|None|False
-QgsProcessingParameterRasterLayer|--i3|Optional input raster file associated with the third date|None|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|input1|Input raster file associated with the first date|None|False
+QgsProcessingParameterRasterLayer|input2|Input raster file associated with the second date|None|False
+QgsProcessingParameterRasterLayer|input3|Optional input raster file associated with the third date|None|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

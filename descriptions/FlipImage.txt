@@ -1,6 +1,6 @@
 FlipImage
 Flip Image
 Reflects an image in the vertical or horizontal axis
-QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
-QgsProcessingParameterEnum|--direction|Direction of reflection; options include 'v' (vertical), 'h' (horizontal), and 'b' (both)|vertical;horizontal;both|False|0|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|input|Input raster file|None|False
+QgsProcessingParameterEnum|direction|Direction of reflection; options include 'v' (vertical), 'h' (horizontal), and 'b' (both)|vertical;horizontal;both|False|0|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

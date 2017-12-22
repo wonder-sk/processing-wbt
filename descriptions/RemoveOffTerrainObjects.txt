@@ -1,7 +1,7 @@
 RemoveOffTerrainObjects
 Remove Off Terrain Objects
 Removes off-terrain objects from a raster digital elevation model (DEM)
-QgsProcessingParameterRasterLayer|-i|Input raster DEM file|None|False
-QgsProcessingParameterNumber|--filter|Filter size (cells).|QgsProcessingParameterNumber.Integer|11|False|None|None
-QgsProcessingParameterNumber|--slope|Slope threshold value.|QgsProcessingParameterNumber.Double|15.0|False|None|None
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|input|Input raster DEM file|None|False
+QgsProcessingParameterNumber|filter|Filter size (cells).|QgsProcessingParameterNumber.Integer|11|False|None|None
+QgsProcessingParameterNumber|slope|Slope threshold value.|QgsProcessingParameterNumber.Double|15.0|False|None|None
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

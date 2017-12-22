@@ -1,7 +1,7 @@
 BufferRaster
 Buffer Raster
 Maps a distance-based buffer around each non-background (non-zero/non-nodata) grid cell in an input image
-QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
-QgsProcessingParameterNumber|--size|Buffer size.|QgsProcessingParameterNumber.Double|None|False|None|None
-QgsProcessingParameterBoolean|--gridcells|Optional flag to indicate that the 'size' threshold should be measured in grid cells instead of the default map units.|False|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|input|Input raster file|None|False
+QgsProcessingParameterNumber|size|Buffer size.|QgsProcessingParameterNumber.Double|None|False|None|None
+QgsProcessingParameterBoolean|gridcells|Optional flag to indicate that the 'size' threshold should be measured in grid cells instead of the default map units.|False|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

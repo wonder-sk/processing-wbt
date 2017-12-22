@@ -1,7 +1,7 @@
 ExtractStreams
 Extract Streams
 Extracts stream grid cells from a flow accumulation raster
-QgsProcessingParameterRasterLayer|--flow_accum|Input raster D8 flow accumulation file|None|False
-QgsProcessingParameterNumber|--threshold|Threshold in flow accumulation values for channelization.|QgsProcessingParameterNumber.Double|None|False|None|None
-QgsProcessingParameterBoolean|--zero_background|Flag indicating whether a background value of zero should be used.|False|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|flow_accum|Input raster D8 flow accumulation file|None|False
+QgsProcessingParameterNumber|threshold|Threshold in flow accumulation values for channelization.|QgsProcessingParameterNumber.Double|None|False|None|None
+QgsProcessingParameterBoolean|zero_background|Flag indicating whether a background value of zero should be used.|False|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

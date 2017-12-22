@@ -1,7 +1,7 @@
 RelativeTopographicPosition
 Relative Topographic Position
 Calculates the relative topographic position index from a DEM
-QgsProcessingParameterRasterLayer|-i|Input raster DEM file|None|False
-QgsProcessingParameterNumber|--filterx|Size of the filter kernel in the x-direction.|QgsProcessingParameterNumber.Integer|11|False|None|None
-QgsProcessingParameterNumber|--filtery|Size of the filter kernel in the y-direction.|QgsProcessingParameterNumber.Integer|11|False|None|None
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|dem|Input raster DEM file|None|False
+QgsProcessingParameterNumber|filterx|Size of the filter kernel in the x-direction.|QgsProcessingParameterNumber.Integer|11|False|None|None
+QgsProcessingParameterNumber|filtery|Size of the filter kernel in the y-direction.|QgsProcessingParameterNumber.Integer|11|False|None|None
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

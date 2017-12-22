@@ -1,9 +1,9 @@
 StreamLinkSlope
 Stream Link Slope
 Estimates the average slope of each link (or tributary) in a stream network
-QgsProcessingParameterRasterLayer|--d8_pntr|Input raster D8 pointer file|None|False
-QgsProcessingParameterRasterLayer|--linkid|Input raster streams link ID (or tributary ID) file|None|False
-QgsProcessingParameterRasterLayer|-i|Input raster DEM file|None|False
-QgsProcessingParameterBoolean|--esri_pntr|D8 pointer uses the ESRI style scheme.|False|False
-QgsProcessingParameterBoolean|--zero_background|Flag indicating whether a background value of zero should be used.|False|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|d8_pntr|Input raster D8 pointer file|None|False
+QgsProcessingParameterRasterLayer|linkid|Input raster streams link ID (or tributary ID) file|None|False
+QgsProcessingParameterRasterLayer|dem|Input raster DEM file|None|False
+QgsProcessingParameterBoolean|esri_pntr|D8 pointer uses the ESRI style scheme.|False|False
+QgsProcessingParameterBoolean|zero_background|Flag indicating whether a background value of zero should be used.|False|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

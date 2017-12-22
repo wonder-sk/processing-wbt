@@ -1,6 +1,6 @@
 FillDepressions
 Fill Depressions
 Fills all of the depressions in a DEM. Depression breaching should be preferred in most cases
-QgsProcessingParameterRasterLayer|-i|Input raster DEM file|None|False
-QgsProcessingParameterBoolean|--fix_flats|Optional flag indicating whether flat areas should have a small gradient applied.|False|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|dem|Input raster DEM file|None|False
+QgsProcessingParameterBoolean|fix_flats|Optional flag indicating whether flat areas should have a small gradient applied.|False|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

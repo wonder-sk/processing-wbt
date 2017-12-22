@@ -1,8 +1,8 @@
 ReclassEqualInterval
 Reclass Equal Interval
 Reclassifies the values in a raster image based on equal-ranges
-QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
-QgsProcessingParameterNumber|--interval|Class interval size.|QgsProcessingParameterNumber.Double|10.0|False|None|None
-QgsProcessingParameterNumber|--start_val|Optional starting value (default is input minimum value).|QgsProcessingParameterNumber.Double|None|False|None|None
-QgsProcessingParameterNumber|--start_val|Optional ending value (default is input maximum value).|QgsProcessingParameterNumber.Double|None|False|None|None
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|input|Input raster file|None|False
+QgsProcessingParameterNumber|interval|Class interval size.|QgsProcessingParameterNumber.Double|10.0|False|None|None
+QgsProcessingParameterNumber|start_val|Optional starting value (default is input minimum value).|QgsProcessingParameterNumber.Double|None|False|None|None
+QgsProcessingParameterNumber|start_val|Optional ending value (default is input maximum value).|QgsProcessingParameterNumber.Double|None|False|None|None
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

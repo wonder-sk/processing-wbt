@@ -1,5 +1,5 @@
 MaxDownslopeElevChange
 Max Downslope Elev Change
 Calculates the maximum downslope change in elevation between a grid cell and its eight downslope neighbors
-QgsProcessingParameterRasterLayer|-i|Input raster DEM file|None|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|dem|Input raster DEM file|None|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

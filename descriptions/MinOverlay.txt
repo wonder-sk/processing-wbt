@@ -1,5 +1,5 @@
 MinOverlay
 Min Overlay
 Evaluates the minimum value for each grid cell from a stack of input rasters
-QgsProcessingParameterMultipleLayers|-i|Input raster files|3|None|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterMultipleLayers|inputs|Input raster files|3|None|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

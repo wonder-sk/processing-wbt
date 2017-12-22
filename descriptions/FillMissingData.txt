@@ -1,6 +1,6 @@
 FillMissingData
 Fill Missing Data
 Fills nodata holes in a DEM
-QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
-QgsProcessingParameterNumber|--filter|Filter size (cells).|QgsProcessingParameterNumber.Integer|11|False|None|None
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|input|Input raster file|None|False
+QgsProcessingParameterNumber|filter|Filter size (cells).|QgsProcessingParameterNumber.Integer|11|False|None|None
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

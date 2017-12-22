@@ -1,6 +1,6 @@
 BalanceContrastEnhancement
 Balance Contrast Enhancement
 Performs a balance contrast enhancement on a colour-composite image of multispectral data
-QgsProcessingParameterRasterLayer|-i|Input colour composite image file|None|False
-QgsProcessingParameterNumber|--band_mean|Band mean value.|QgsProcessingParameterNumber.Double|100.0|False|None|None
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|input|Input colour composite image file|None|False
+QgsProcessingParameterNumber|band_mean|Band mean value.|QgsProcessingParameterNumber.Double|100.0|False|None|None
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

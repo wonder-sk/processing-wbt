@@ -1,8 +1,8 @@
 D8FlowAccumulation
 D Flow Accumulation
 Calculates a D8 flow accumulation raster from an input DEM
-QgsProcessingParameterRasterLayer|-i|Input raster DEM file|None|False
-QgsProcessingParameterEnum|--out_type|Output type; one of 'cells', 'sca' (default), and 'ca'|Cells;Specific Contributing Area;Catchment Area|False|1|False
-QgsProcessingParameterBoolean|--log|Optional flag to request the output be log-transformed.|False|False
-QgsProcessingParameterBoolean|--clip|Optional flag to request clipping the display max by 1%.|False|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|dem|Input raster DEM file|None|False
+QgsProcessingParameterEnum|out_type|Output type; one of 'cells', 'sca' (default), and 'ca'|Cells;Specific Contributing Area;Catchment Area|False|1|False
+QgsProcessingParameterBoolean|log|Optional flag to request the output be log-transformed.|False|False
+QgsProcessingParameterBoolean|clip|Optional flag to request clipping the display max by 1%.|False|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

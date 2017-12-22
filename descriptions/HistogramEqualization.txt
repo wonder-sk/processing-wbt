@@ -1,6 +1,6 @@
 HistogramEqualization
 Histogram Equalization
 Performs a histogram equalization contrast enhancment on an image
-QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
-QgsProcessingParameterNumber|--num_tones|Number of tones in the output image.|QgsProcessingParameterNumber.Integer|256|False|None|None
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|input|Input raster file|None|False
+QgsProcessingParameterNumber|num_tones|Number of tones in the output image.|QgsProcessingParameterNumber.Integer|256|False|None|None
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

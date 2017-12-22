@@ -27,13 +27,13 @@ __revision__ = '$Format:%H$'
 
 from qgis.core import QgsApplication
 
-from processing_whitebox.whiteboxProvider import whiteboxProvider
+from processing_whitebox.whiteboxProvider import WhiteboxProvider
 
 
-class whiteboxProviderPlugin:
+class WhiteboxProviderPlugin:
 
     def __init__(self):
-        self.provider = whiteboxProvider()
+        self.provider = WhiteboxProvider()
 
     def initGui(self):
         QgsApplication.processingRegistry().addProvider(self.provider)

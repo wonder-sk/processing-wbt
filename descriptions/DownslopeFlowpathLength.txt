@@ -1,8 +1,8 @@
 DownslopeFlowpathLength
 Downslope Flowpath Length
 Calculates the downslope flowpath length from each cell to basin outlet
-QgsProcessingParameterRasterLayer|--d8_pntr|Input D8 pointer raster file|None|False
-QgsProcessingParameterRasterLayer|--watersheds|Optional input watershed raster file|None|False
-QgsProcessingParameterRasterLayer|--weights|Optional input weights raster file|None|False
-QgsProcessingParameterBoolean|--esri_pntr|D8 pointer uses the ESRI style scheme.|False|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|d8_pntr|Input D8 pointer raster file|None|False
+QgsProcessingParameterRasterLayer|watersheds|Optional input watershed raster file|None|False
+QgsProcessingParameterRasterLayer|weights|Optional input weights raster file|None|False
+QgsProcessingParameterBoolean|esri_pntr|D8 pointer uses the ESRI style scheme.|False|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

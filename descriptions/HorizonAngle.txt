@@ -1,7 +1,7 @@
 HorizonAngle
 Horizon Angle
 Calculates horizon angle (maximum upwind slope) for each grid cell in an input DEM
-QgsProcessingParameterRasterLayer|-i|Input raster DEM file|None|False
-QgsProcessingParameterNumber|--azimuth|Wind azimuth in degrees.|QgsProcessingParameterNumber.Double|0.0|False|None|None
-QgsProcessingParameterNumber|--max_dist|Optional maximum search distance (unspecified if none; in xy units).|QgsProcessingParameterNumber.Double|None|False|None|None
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|dem|Input raster DEM file|None|False
+QgsProcessingParameterNumber|azimuth|Wind azimuth in degrees.|QgsProcessingParameterNumber.Double|0.0|False|None|None
+QgsProcessingParameterNumber|max_dist|Optional maximum search distance (unspecified if none; in xy units).|QgsProcessingParameterNumber.Double|None|False|None|None
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

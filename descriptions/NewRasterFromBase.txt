@@ -1,7 +1,7 @@
 NewRasterFromBase
 New Raster From Base
 Creates a new raster using a base image
-QgsProcessingParameterRasterLayer|-i|Input base raster file|None|False
-QgsProcessingParameterString|--value|Constant value to fill raster with; either 'nodata' or numeric value|nodata|False|False
-QgsProcessingParameterEnum|--data_type|Output raster data type; options include 'double' (64-bit), 'float' (32-bit), and 'integer' (signed 16-bit) (default is 'float')|double;float;integer|False|1|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|base|Input base raster file|None|False
+QgsProcessingParameterString|value|Constant value to fill raster with; either 'nodata' or numeric value|nodata|False|False
+QgsProcessingParameterEnum|data_type|Output raster data type; options include 'double' (64-bit), 'float' (32-bit), and 'integer' (signed 16-bit) (default is 'float')|double;float;integer|False|1|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

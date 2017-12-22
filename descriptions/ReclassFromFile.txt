@@ -1,6 +1,6 @@
 ReclassFromFile
 Reclass From File
 Reclassifies the values in a raster image using reclass ranges in a text file
-QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
-QgsProcessingParameterFile|--reclass_file|Input text file containing reclass ranges|QgsProcessingParameterFile.File|txt|None|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|input|Input raster file|None|False
+QgsProcessingParameterFile|reclass_file|Input text file containing reclass ranges|QgsProcessingParameterFile.File|txt|None|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

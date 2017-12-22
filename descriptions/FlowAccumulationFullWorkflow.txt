@@ -1,11 +1,11 @@
 FlowAccumulationFullWorkflow
 Flow Accumulation Full Workflow
 Resolves all of the depressions in a DEM, outputting a breached DEM, an aspect-aligned non-divergent flow pointer, a flow accumulation raster
-QgsProcessingParameterRasterLayer|-i|Input raster DEM file|None|False
-QgsProcessingParameterEnum|--out_type|Output type; one of 'cells', 'sca' (default), and 'ca'|Cells;Specific Contributing Area;Catchment Area|False|1|False
-QgsProcessingParameterBoolean|--log|Optional flag to request the output be log-transformed.|False|False
-QgsProcessingParameterBoolean|--clip|Optional flag to request clipping the display max by 1%.|False|False
-QgsProcessingParameterBoolean|--esri_pntr|D8 pointer uses the ESRI style scheme.|False|False
-QgsProcessingParameterRasterDestination|--out_dem|Output raster DEM file|None|False
-QgsProcessingParameterRasterDestination|--out_pntr|Output raster flow pointer file|None|False
-QgsProcessingParameterRasterDestination|--out_accum|Output raster flow accumulation file|None|False
+QgsProcessingParameterRasterLayer|dem|Input raster DEM file|None|False
+QgsProcessingParameterEnum|out_type|Output type; one of 'cells', 'sca' (default), and 'ca'|Cells;Specific Contributing Area;Catchment Area|False|1|False
+QgsProcessingParameterBoolean|log|Optional flag to request the output be log-transformed.|False|False
+QgsProcessingParameterBoolean|clip|Optional flag to request clipping the display max by 1%.|False|False
+QgsProcessingParameterBoolean|esri_pntr|D8 pointer uses the ESRI style scheme.|False|False
+QgsProcessingParameterRasterDestination|out_dem|Output raster DEM file|None|False
+QgsProcessingParameterRasterDestination|out_pntr|Output raster flow pointer file|None|False
+QgsProcessingParameterRasterDestination|out_accum|Output raster flow accumulation file|None|False

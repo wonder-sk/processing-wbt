@@ -1,9 +1,9 @@
 LidarSegmentationBasedFilter
 Lidar Segmentation Based Filter
 Identifies ground points within LiDAR point clouds using a segmentation based approach
-QgsProcessingParameterFile|-i|Input LiDAR file|QgsProcessingParameterFile.File|las|None|False
-QgsProcessingParameterNumber|--dist|Search Radius.|QgsProcessingParameterNumber.Double|5.0|False|None|None
-QgsProcessingParameterNumber|--norm_diff|Maximum difference in normal vectors, in degrees.|QgsProcessingParameterNumber.Double|2.0|False|None|None
-QgsProcessingParameterNumber|--maxzdiff|Maximum difference in elevation (z units) between neighbouring points of the same segment.|QgsProcessingParameterNumber.Double|1.0|False|None|None
-QgsProcessingParameterBoolean|--classify|Classify points as ground (2) or off-ground (1).|False|False
-QgsProcessingParameterFileDestination|-o|Output file|LIDAR files (*.las *.LAS)|None|False
+QgsProcessingParameterFile|input|Input LiDAR file|QgsProcessingParameterFile.File|las|None|False
+QgsProcessingParameterNumber|radius|Search Radius.|QgsProcessingParameterNumber.Double|5.0|False|None|None
+QgsProcessingParameterNumber|norm_diff|Maximum difference in normal vectors, in degrees.|QgsProcessingParameterNumber.Double|2.0|False|None|None
+QgsProcessingParameterNumber|maxzdiff|Maximum difference in elevation (z units) between neighbouring points of the same segment.|QgsProcessingParameterNumber.Double|1.0|False|None|None
+QgsProcessingParameterBoolean|classify|Classify points as ground (2) or off-ground (1).|False|False
+QgsProcessingParameterFileDestination|output|Output file|LIDAR files (*.las *.LAS)|None|False

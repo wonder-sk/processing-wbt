@@ -1,5 +1,5 @@
 ToDegrees
 To Degrees
 Converts a raster from radians to degrees
-QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|input|Input raster file|None|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

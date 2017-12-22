@@ -1,9 +1,9 @@
 FeaturePreservingDenoise
 Feature Preserving Denoise
 Reduces short-scale variation in an input DEM using a modified Sun et al. (2007) algorithm
-QgsProcessingParameterRasterLayer|-i|Input raster DEM file|None|False
-QgsProcessingParameterNumber|--filter|Size of the filter kernel.|QgsProcessingParameterNumber.Integer|11|False|None|None
-QgsProcessingParameterNumber|--norm_diff|Maximum difference in normal vectors, in degrees.|QgsProcessingParameterNumber.Double|15.0|False|None|None
-QgsProcessingParameterNumber|--num_iter|Number of iterations.|QgsProcessingParameterNumber.Integer|5|False|None|None
-QgsProcessingParameterNumber|--zfactor|Optional multiplier for when the vertical and horizontal units are not the same.|QgsProcessingParameterNumber.Double|1.0|False|None|None
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|dem|Input raster DEM file|None|False
+QgsProcessingParameterNumber|filter|Size of the filter kernel.|QgsProcessingParameterNumber.Integer|11|False|None|None
+QgsProcessingParameterNumber|norm_diff|Maximum difference in normal vectors, in degrees.|QgsProcessingParameterNumber.Double|15.0|False|None|None
+QgsProcessingParameterNumber|num_iter|Number of iterations.|QgsProcessingParameterNumber.Integer|5|False|None|None
+QgsProcessingParameterNumber|zfactor|Optional multiplier for when the vertical and horizontal units are not the same.|QgsProcessingParameterNumber.Double|1.0|False|None|None
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

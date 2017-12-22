@@ -25,8 +25,8 @@ __copyright__ = '(C) 2017, Alexander Bruy'
 
 __revision__ = '$Format:%H$'
 
-from processing_whitebox.whiteboxProviderPlugin import whiteboxProviderPlugin
+from processing_whitebox.whiteboxProviderPlugin import WhiteboxProviderPlugin
 
 
 def classFactory(iface):
-    return whiteboxProviderPlugin()
+    return WhiteboxProviderPlugin()

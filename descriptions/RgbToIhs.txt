@@ -1,10 +1,10 @@
 RgbToIhs
 Rgb To Ihs
 Converts red, green, and blue (RGB) images into intensity, hue, and saturation (IHS) images
-QgsProcessingParameterRasterLayer|--red|Input red band image file. Optionally specified if colour-composite not specified|None|False
-QgsProcessingParameterRasterLayer|--green|Input green band image file. Optionally specified if colour-composite not specified|None|False
-QgsProcessingParameterRasterLayer|--blue|Input blue band image file. Optionally specified if colour-composite not specified|None|False
-QgsProcessingParameterRasterLayer|--composite|Input colour-composite image file. Only used if individual bands are not specified|None|False
-QgsProcessingParameterRasterDestination|--intensity|Output intensity raster file|None|False
-QgsProcessingParameterRasterDestination|--hue|Output hue raster file|None|False
-QgsProcessingParameterRasterDestination|--saturation|Output saturation raster file|None|False
+QgsProcessingParameterRasterLayer|red|Input red band image file. Optionally specified if colour-composite not specified|None|False
+QgsProcessingParameterRasterLayer|green|Input green band image file. Optionally specified if colour-composite not specified|None|False
+QgsProcessingParameterRasterLayer|blue|Input blue band image file. Optionally specified if colour-composite not specified|None|False
+QgsProcessingParameterRasterLayer|composite|Input colour-composite image file. Only used if individual bands are not specified|None|False
+QgsProcessingParameterRasterDestination|intensity|Output intensity raster file|None|False
+QgsProcessingParameterRasterDestination|hue|Output hue raster file|None|False
+QgsProcessingParameterRasterDestination|saturation|Output saturation raster file|None|False

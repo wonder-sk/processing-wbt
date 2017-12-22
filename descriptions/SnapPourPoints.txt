@@ -1,7 +1,7 @@
 SnapPourPoints
 Snap Pour Points
 Moves outlet points used to specify points of interest in a watershedding operation to the cell with the highest flow accumulation in its neighbourhood
-QgsProcessingParameterRasterLayer|--pour_pts|Input raster pour points (outlet) file|None|False
-QgsProcessingParameterRasterLayer|--flow_accum|Input raster D8 flow accumulation file|None|False
-QgsProcessingParameterNumber|--snap_dist|Maximum snap distance in map units.|QgsProcessingParameterNumber.Double|None|False|None|None
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|pour_pts|Input raster pour points (outlet) file|None|False
+QgsProcessingParameterRasterLayer|flow_accum|Input raster D8 flow accumulation file|None|False
+QgsProcessingParameterNumber|snap_dist|Maximum snap distance in map units.|QgsProcessingParameterNumber.Double|None|False|None|None
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

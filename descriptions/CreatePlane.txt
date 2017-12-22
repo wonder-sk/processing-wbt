@@ -1,8 +1,8 @@
 CreatePlane
 Create Plane
 Creates a raster image based on the equation for a simple plane
-QgsProcessingParameterRasterLayer|--base|Input base raster file|None|False
-QgsProcessingParameterNumber|--gradient|Slope gradient in degrees (-85.0 to 85.0).|QgsProcessingParameterNumber.Double|15.0|False|None|None
-QgsProcessingParameterNumber|--aspect|Aspect (direction) in degrees clockwise from north (0.0-360.0).|QgsProcessingParameterNumber.Double|90.0|False|None|None
-QgsProcessingParameterNumber|--constant|Constant value.|QgsProcessingParameterNumber.Double|0.0|False|None|None
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|base|Input base raster file|None|False
+QgsProcessingParameterNumber|gradient|Slope gradient in degrees (-85.0 to 85.0).|QgsProcessingParameterNumber.Double|15.0|False|None|None
+QgsProcessingParameterNumber|aspect|Aspect (direction) in degrees clockwise from north (0.0-360.0).|QgsProcessingParameterNumber.Double|90.0|False|None|None
+QgsProcessingParameterNumber|constant|Constant value.|QgsProcessingParameterNumber.Double|0.0|False|None|None
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

@@ -1,8 +1,8 @@
 SigmoidalContrastStretch
 Sigmoidal Contrast Stretch
 Performs a sigmoidal contrast stretch on input images
-QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
-QgsProcessingParameterNumber|--cutoff|Cutoff value between 0.0 and 0.95.|QgsProcessingParameterNumber.Double|0.0|False|None|None
-QgsProcessingParameterNumber|--gain|Gain value.|QgsProcessingParameterNumber.Double|1.0|False|None|None
-QgsProcessingParameterNumber|--num_tones|Number of tones in the output image.|QgsProcessingParameterNumber.Integer|256|False|None|None
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|input|Input raster file|None|False
+QgsProcessingParameterNumber|cutoff|Cutoff value between 0.0 and 0.95.|QgsProcessingParameterNumber.Double|0.0|False|None|None
+QgsProcessingParameterNumber|gain|Gain value.|QgsProcessingParameterNumber.Double|1.0|False|None|None
+QgsProcessingParameterNumber|num_tones|Number of tones in the output image.|QgsProcessingParameterNumber.Integer|256|False|None|None
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

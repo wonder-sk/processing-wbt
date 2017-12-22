@@ -1,7 +1,7 @@
 SobelFilter
 Sobel Filter
 Performs a Sobel edge-detection filter on an image
-QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
-QgsProcessingParameterEnum|--variant|Optional variant value. Options include 3x3 and 5x5 (default is 3x3)|3x3;5x5|False|0|False
-QgsProcessingParameterNumber|--clip|Optional amount to clip the distribution tails by, in percent (default is 0.0).|QgsProcessingParameterNumber.Double|0.0|False|None|None
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|input|Input raster file|None|False
+QgsProcessingParameterEnum|variant|Optional variant value. Options include 3x3 and 5x5 (default is 3x3)|3x3;5x5|False|0|False
+QgsProcessingParameterNumber|clip|Optional amount to clip the distribution tails by, in percent (default is 0.0).|QgsProcessingParameterNumber.Double|0.0|False|None|None
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

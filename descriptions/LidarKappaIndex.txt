@@ -1,6 +1,6 @@
 LidarKappaIndex
 Lidar Kappa Index
 Performs a kappa index of agreement (KIA) analysis on the classifications of two LAS files
-QgsProcessingParameterFile|--i1|Input LiDAR classification file|QgsProcessingParameterFile.File|las|None|False
-QgsProcessingParameterFile|--i2|Input LiDAR reference file|QgsProcessingParameterFile.File|las|None|False
-QgsProcessingParameterFileDestination|-o|Output HTML file|HTML files (*.html *.HTML)|None|False
+QgsProcessingParameterFile|input1|Input LiDAR classification file|QgsProcessingParameterFile.File|las|None|False
+QgsProcessingParameterFile|input2|Input LiDAR reference file|QgsProcessingParameterFile.File|las|None|False
+QgsProcessingParameterFileDestination|output|Output HTML file|HTML files (*.html *.HTML)|None|False

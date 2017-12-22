@@ -1,5 +1,5 @@
 CumulativeDistribution
 Cumulative Distribution
 Converts a raster image to its cumulative distribution function
-QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|input|Input raster file|None|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

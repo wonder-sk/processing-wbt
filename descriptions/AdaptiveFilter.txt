@@ -1,8 +1,8 @@
 AdaptiveFilter
 Adaptive Filter
 Performs an adaptive filter on an image
-QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
-QgsProcessingParameterNumber|--filterx|Size of the filter kernel in the x-direction.|QgsProcessingParameterNumber.Integer|11|False|None|None
-QgsProcessingParameterNumber|--filtery|Size of the filter kernel in the y-direction.|QgsProcessingParameterNumber.Integer|11|False|None|None
-QgsProcessingParameterNumber|--threshold|Difference from mean threshold, in standard deviations.|QgsProcessingParameterNumber.Double|2.0|False|None|None
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|input|Input raster file|None|False
+QgsProcessingParameterNumber|filterx|Size of the filter kernel in the x-direction.|QgsProcessingParameterNumber.Integer|11|False|None|None
+QgsProcessingParameterNumber|filtery|Size of the filter kernel in the y-direction.|QgsProcessingParameterNumber.Integer|11|False|None|None
+QgsProcessingParameterNumber|threshold|Difference from mean threshold, in standard deviations.|QgsProcessingParameterNumber.Double|2.0|False|None|None
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

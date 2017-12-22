@@ -28,9 +28,24 @@ __revision__ = '$Format:%H$'
 import os
 
 from qgis.PyQt.QtGui import QIcon
-from qgis.PyQt.QCore import QCoreApplication
-from qgis.core import QgsProcessingAlgorithm
+from qgis.core import (QgsProcessing,
+                       QgsProcessingAlgorithm,
+                       QgsProcessingParameterEnum,
+                       QgsProcessingParameterFile,
+                       QgsProcessingParameterNumber,
+                       QgsProcessingParameterString,
+                       QgsProcessingParameterBoolean,
+                       QgsProcessingParameterRasterLayer,
+                       QgsProcessingParameterMultipleLayers,
+                       QgsProcessingParameterRasterDestination,
+                       QgsProcessingParameterFileDestination,
+                       QgsProcessingOutputHtml,
+                       QgsProcessingOutputFile
+                      )
 from processing.core.parameters import getParameterFromString
+from processing.tools.system import isWindows
+
+from processing_whitebox import whiteboxUtils
 
 pluginPath = os.path.dirname(__file__)
 
@@ -75,8 +90,19 @@ class WhiteboxAlgorithm(QgsProcessingAlgorithm):
     def tr(self, text):
         return QCoreApplication.translate("WhiteboxAlgorithm", text)
 
+    def initAlgorithm(self, config=None):
+        for p in self.params:
+            self.addParameter(p, True)
+
+            # file destinations are not automatically added as outputs
+            if isinstance(p, QgsProcessingParameterFileDestination):
+                if p.defaultFileExtension().lower() == 'html':
+                    self.addOutput(QgsProcessingOutputHtml(p.name(), p.description()))
+                elif p.defaultFileExtension().lower() == 'las':
+                    self.addOutput(QgsProcessingOutputFile(p.name(), p.description()))
+
     def defineCharacteristicsFromFile(self):
-        with open(self.description_file) as lines:
+        with open(self.descriptionFile) as lines:
             line = lines.readline().strip('\n').strip()
             self._name = line
 
@@ -92,16 +118,54 @@ class WhiteboxAlgorithm(QgsProcessingAlgorithm):
                 line = lines.readline().strip('\n').strip()
 
     def processAlgorithm(self, parameters, context, feedback):
-        arguments = [whiteboxUtils.whiteboxToolsPath()]
+        wb = whiteboxUtils.whiteboxToolsExecutable()
+        if wb == '':
+            wb = 'whitebox_tools'
+
+        arguments = [wb]
+        arguments.append('--run={}'.format(self.name()))
 
         for param in self.parameterDefinitions():
             if param.isDestination():
                 continue
 
-            if isinstance(param, (QgsProcessingParameterRasterLayer, QgsProcessingParameterFeatureSource)):
-                pass
+            if isinstance(param, QgsProcessingParameterRasterLayer):
+                layer = self.parameterAsRasterLayer(parameters, param.name(), context)
+                arguments.append('--{}="{}"'.format(param.name(), layer.source()))
+            elif isinstance(param, QgsProcessingParameterMultipleLayers):
+                layers = self.parameterAsLayerList(parameters, param.name(), context)
+                if layers is None or len(layers) == 0:
+                    continue
+                if param.layerType() == QgsProcessing.TypeRaster:
+                    files = [layer.source() for layer in layers]
+                arguments.append('--{}="{}"'.format(param.name(), ','.join(files)))
+            elif isinstance(param, QgsProcessingParameterBoolean):
+                arguments.append('--{}="{}"'.format(param.name(), self.parameterAsBool(parameters, param.name(), context)))
+            elif isinstance(param, QgsProcessingParameterNumber):
+                arguments.append('--{}={}'.format(param.name(), self.parameterAsDouble(parameters, param.name(), context)))
+            elif isinstance(param, QgsProcessingParameterEnum):
+                arguments.append('--{}="{}"'.format(param.name(), self.parameterAsEnum(parameters, param.name(), context)))
+            elif isinstance(param, (QgsProcessingParameterString, QgsProcessingParameterFile)):
+                arguments.append('--{}="{}"'.format(param.name(), self.parameterAsFile(parameters, param.name(), context)))
+            elif isinstance(param, (QgsProcessingParameterString)):
+                arguments.append('--{}="{}"'.format(param.name(), self.parameterAsString(parameters, param.name(), context)))
             else:
                 arguments.append('--{}="{}"'.format(param.name(), self.parameterAsInt(parameters, param.name(), context)))
 
         for out in self.destinationParameterDefinitions():
-            pass
+            if isinstance(out, QgsProcessingParameterRasterDestination):
+                arguments.append('--{}="{}"'.format(out.name(), self.parameterAsOutputLayer(parameters, out.name(), context)))
+            elif isinstance(out, QgsProcessingParameterFileDestination):
+                arguments.append('--{}="{}"'.format(out.name(), self.parameterAsFileOutput(parameters, out.name(), context)))
+
+        arguments.append('-v')
+
+        whiteboxUtils.execute(arguments, feedback)
+
+        results = {}
+        for output in self.outputDefinitions():
+            outputName = output.name()
+            if outputName in parameters:
+                results[outputName] = parameters[outputName]
+
+        return results

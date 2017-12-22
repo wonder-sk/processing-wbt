@@ -1,4 +1,4 @@
 RasterSummaryStats
 Raster Summary Stats
 Measures a rasters average, standard deviation, num. non-nodata cells, and total
-QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
+QgsProcessingParameterRasterLayer|input|Input raster file|None|False

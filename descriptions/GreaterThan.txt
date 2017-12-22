@@ -1,7 +1,7 @@
 GreaterThan
 Greater Than
 Performs a greater-than comparison operation on two rasters or a raster and a constant value
-QgsProcessingParameterRasterLayer|--input1|Input raster file or constant value|None|False
-QgsProcessingParameterRasterLayer|--input2|Input raster file or constant value|None|False
-QgsProcessingParameterBoolean|--incl_equals|Perform a greater-than-or-equal-to operation.|False|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|input1|Input raster file or constant value|None|False
+QgsProcessingParameterRasterLayer|input2|Input raster file or constant value|None|False
+QgsProcessingParameterBoolean|incl_equals|Perform a greater-than-or-equal-to operation.|False|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

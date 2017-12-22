@@ -1,7 +1,7 @@
 Reclass
 Reclass
 Reclassifies the values in a raster image
-QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
-QgsProcessingParameterString|--reclass_vals|Reclassification triplet values (new value; from value; to less than), e.g. '0.0;0.0;1.0;1.0;1.0;2.0|None|False|False
-QgsProcessingParameterBoolean|--assign_mode|Optional Boolean flag indicating whether to operate in assign mode, reclass_vals values are interpreted as new value; old value pairs.|False|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|input|Input raster file|None|False
+QgsProcessingParameterString|reclass_vals|Reclassification triplet values (new value; from value; to less than), e.g. '0.0;0.0;1.0;1.0;1.0;2.0|None|False|False
+QgsProcessingParameterBoolean|assign_mode|Optional Boolean flag indicating whether to operate in assign mode, reclass_vals values are interpreted as new value; old value pairs.|False|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

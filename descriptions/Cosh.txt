@@ -1,5 +1,5 @@
 Cosh
 Cosh
 Returns the hyperbolic cosine (cosh) of each values in a raster
-QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|input|Input raster file|None|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

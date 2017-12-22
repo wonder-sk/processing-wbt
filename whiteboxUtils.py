@@ -33,8 +33,6 @@ from qgis.core import QgsMessageLog, QgsProcessingFeedback
 from processing.core.ProcessingLog import ProcessingLog
 from processing.core.ProcessingConfig import ProcessingConfig
 
-versionFound = False
-whiteboxVersion = None
 versionRegex = re.compile("([\d.]+)")
 
 WHITEBOX_ACTIVE = 'WHITEBOX_ACTIVE'
@@ -42,46 +40,37 @@ WHITEBOX_EXECUTABLE = 'WHITEBOX_EXECUTABLE'
 WHITEBOX_VERBOSE = 'WHITEBOX_VERBOSE'
 
 
-def whiteboxToolsPath():
+def whiteboxToolsExecutable():
     filePath = ProcessingConfig.getSetting(WHITEBOX_EXECUTABLE)
     return filePath if filePath is not None else ''
 
 
 def descriptionPath():
-    return os.path.normpath(os.path.join(os.path.dirname(__file__), "description"))
+    return os.path.normpath(os.path.join(os.path.dirname(__file__), "descriptions"))
 
 
 def version():
-    global versionFound
-    global whiteboxVersion
+    commands = whiteboxToolsExecutable()
+    if commands == '':
+        commands = 'whitebox_tools'
+    commands += ' --version'
 
-    if versionFound:
-        return whiteboxVersion
-
-    toolPath = whiteboxUtils.whiteboxPath()
-    if not toolPath:
-        toolPath = 'whitebox_tools'
-    commands = [toolPath, '--version']
-
-    with subprocess.Popen(commands,
+    with subprocess.Popen([commands],
                           shell=True,
                           stdout=subprocess.PIPE,
                           stdin=subprocess.DEVNULL,
                           stderr=subprocess.STDOUT,
                           universal_newlines=True) as proc:
         try:
-            lines = proc.stdout.readlines()
-            for line in lines:
+            for line in proc.stdout:
                 if line.startswith('whitebox-tools'):
-                    versionFound = True
-                    whiteboxVersion = versionRegex.search(line.strip()).group(0)
-                    return whiteboxVersion
+                    return versionRegex.search(line.strip()).group(0)
             return None
         except:
             return None
 
 
-def execute(command, feedback=None):
+def execute(commands, feedback=None):
     if feedback is None:
         feedback = QgsProcessingFeedback()
 

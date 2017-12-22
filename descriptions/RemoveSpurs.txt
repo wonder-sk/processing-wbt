@@ -1,6 +1,6 @@
 RemoveSpurs
 Remove Spurs
 Removes the spurs (prunning operation) from a Boolean line image.; intended to be used on the output of the LineThinning tool
-QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
-QgsProcessingParameterNumber|--iterations|Maximum number of iterations|QgsProcessingParameterNumber.Integer|10|False|None|None
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|input|Input raster file|None|False
+QgsProcessingParameterNumber|iterations|Maximum number of iterations|QgsProcessingParameterNumber.Integer|10|False|None|None
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

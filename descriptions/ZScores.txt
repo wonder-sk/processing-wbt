@@ -1,5 +1,5 @@
 ZScores
 Z Scores
 Standardizes the values in an input raster by converting to z-scores
-QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|input|Input raster file|None|False
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

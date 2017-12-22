@@ -1,10 +1,10 @@
 LidarElevationSlice
 Lidar Elevation Slice
 Outputs all of the points within a LiDAR (LAS) point file that lie between a specified elevation range
-QgsProcessingParameterFile|-i|Input LiDAR file|QgsProcessingParameterFile.File|las|None|False
-QgsProcessingParameterNumber|--minz|Minimum elevation value (optional).|QgsProcessingParameterNumber.Double|None|False|None|None
-QgsProcessingParameterNumber|--maxz|Maximum elevation value (optional).|QgsProcessingParameterNumber.Double|None|False|None|None
-QgsProcessingParameterBoolean|--class|Optional boolean flag indicating whether points outside the range should be retained in output but reclassified.|False|False
-QgsProcessingParameterNumber|--inclassval|Optional parameter specifying the class value assigned to points within the slice.|QgsProcessingParameterNumber.Integer|2|False|None|None
-QgsProcessingParameterNumber|--outclassval|Optional parameter specifying the class value assigned to points within the slice.|QgsProcessingParameterNumber.Integer|1|False|None|None
-QgsProcessingParameterFileDestination|-o|Output LiDAR file|LIDAR files (*.las *.LAS)|None|False
+QgsProcessingParameterFile|input|Input LiDAR file|QgsProcessingParameterFile.File|las|None|False
+QgsProcessingParameterNumber|minz|Minimum elevation value (optional).|QgsProcessingParameterNumber.Double|None|False|None|None
+QgsProcessingParameterNumber|maxz|Maximum elevation value (optional).|QgsProcessingParameterNumber.Double|None|False|None|None
+QgsProcessingParameterBoolean|class|Optional boolean flag indicating whether points outside the range should be retained in output but reclassified.|False|False
+QgsProcessingParameterNumber|inclassval|Optional parameter specifying the class value assigned to points within the slice.|QgsProcessingParameterNumber.Integer|2|False|None|None
+QgsProcessingParameterNumber|outclassval|Optional parameter specifying the class value assigned to points within the slice.|QgsProcessingParameterNumber.Integer|1|False|None|None
+QgsProcessingParameterFileDestination|output|Output LiDAR file|LIDAR files (*.las *.LAS)|None|False

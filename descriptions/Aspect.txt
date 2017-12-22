@@ -1,6 +1,6 @@
 Aspect
 Aspect
 Calculates an aspect raster from an input DEM
-QgsProcessingParameterRasterLayer|-i|Input raster DEM file|None|False
-QgsProcessingParameterNumber|--zfactor|Optional multiplier for when the vertical and horizontal units are not the same.|QgsProcessingParameterNumber.Double|1.0|False|None|None
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|dem|Input raster DEM file|None|False
+QgsProcessingParameterNumber|zfactor|Optional multiplier for when the vertical and horizontal units are not the same.|QgsProcessingParameterNumber.Double|1.0|False|None|None
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False

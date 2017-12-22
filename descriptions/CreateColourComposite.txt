@@ -1,9 +1,9 @@
 CreateColourComposite
 Create Colour Composite
 Creates a colour-composite image from three bands of multispectral imagery
-QgsProcessingParameterRasterLayer|--red|Input red band image file|None|False
-QgsProcessingParameterRasterLayer|--green|Input green band image file|None|False
-QgsProcessingParameterRasterLayer|--blue|Input blue band image file|None|False
-QgsProcessingParameterRasterLayer|--opacity|Input opacity band image file (optional)|None|False
-QgsProcessingParameterBoolean|--enhance|Optional flag indicating whether a balance contrast enhancement is performed.|True|False
-QgsProcessingParameterRasterDestination|-o|Output colour composite file|None|False
+QgsProcessingParameterRasterLayer|red|Input red band image file|None|False
+QgsProcessingParameterRasterLayer|green|Input green band image file|None|False
+QgsProcessingParameterRasterLayer|blue|Input blue band image file|None|False
+QgsProcessingParameterRasterLayer|opacity|Input opacity band image file (optional)|None|False
+QgsProcessingParameterBoolean|enhance|Optional flag indicating whether a balance contrast enhancement is performed.|True|False
+QgsProcessingParameterRasterDestination|output|Output colour composite file|None|False

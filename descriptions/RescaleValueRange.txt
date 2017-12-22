@@ -1,9 +1,9 @@
 RescaleValueRange
 Rescale Value Range
 Performs a min-max contrast stretch on an input greytone image
-QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
-QgsProcessingParameterNumber|--out_min_val|New minimum value in output image.|QgsProcessingParameterNumber.Double|None|False|None|None
-QgsProcessingParameterNumber|--out_max_val|New maximum value in output image.|QgsProcessingParameterNumber.Double|None|False|None|None
-QgsProcessingParameterNumber|--clip_min|Optional lower tail clip value.|QgsProcessingParameterNumber.Double|None|False|None|None
-QgsProcessingParameterNumber|--clip_max|Optional upper tail clip value.|QgsProcessingParameterNumber.Double|None|False|None|None
-QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
+QgsProcessingParameterRasterLayer|input|Input raster file|None|False
+QgsProcessingParameterNumber|out_min_val|New minimum value in output image.|QgsProcessingParameterNumber.Double|None|False|None|None
+QgsProcessingParameterNumber|out_max_val|New maximum value in output image.|QgsProcessingParameterNumber.Double|None|False|None|None
+QgsProcessingParameterNumber|clip_min|Optional lower tail clip value.|QgsProcessingParameterNumber.Double|None|False|None|None
+QgsProcessingParameterNumber|clip_max|Optional upper tail clip value.|QgsProcessingParameterNumber.Double|None|False|None|None
+QgsProcessingParameterRasterDestination|output|Output raster file|None|False
