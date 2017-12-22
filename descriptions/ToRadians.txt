@@ -1,0 +1,5 @@
+ToRadians
+To Radians
+Converts a raster from degrees to radians
+QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

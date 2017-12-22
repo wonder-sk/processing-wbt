@@ -1,0 +1,5 @@
+IntegralImage
+Integral Image
+Transforms an input image (summed area table) into its integral image equivalent
+QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

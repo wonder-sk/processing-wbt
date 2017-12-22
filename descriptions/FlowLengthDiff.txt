@@ -1,0 +1,6 @@
+FlowLengthDiff
+Flow Length Diff
+Calculates the local maximum absolute difference in downslope flowpath length, useful in mapping drainage divides and ridges
+QgsProcessingParameterRasterLayer|--d8_pntr|Input D8 pointer raster file|None|False
+QgsProcessingParameterBoolean|--esri_pntr|D8 pointer uses the ESRI style scheme.|False|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

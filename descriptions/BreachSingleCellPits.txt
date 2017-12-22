@@ -1,0 +1,5 @@
+BreachSingleCellPits
+Breach Single Cell Pits
+Removes single-cell pits from an input DEM by breaching
+QgsProcessingParameterRasterLayer|-i|Input raster DEM file|None|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

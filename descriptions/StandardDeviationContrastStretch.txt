@@ -1,0 +1,7 @@
+StandardDeviationContrastStretch
+Standard Deviation Contrast Stretch
+Performs a standard-deviation contrast stretch on input images
+QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
+QgsProcessingParameterNumber|--clip|Standard deviation clip value.|QgsProcessingParameterNumber.Double|2.0|False|None|None
+QgsProcessingParameterNumber|--num_tones|Number of tones in the output image.|QgsProcessingParameterNumber.Integer|256|False|None|None
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

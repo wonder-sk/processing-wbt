@@ -1,0 +1,6 @@
+Isobasins
+Isobasins
+Divides a landscape into nearly equal sized drainage basins (i.e. watersheds)
+QgsProcessingParameterRasterLayer|-i|Input raster DEM file|None|False
+QgsProcessingParameterNumber|--size|Target basin size, in grid cells.|QgsProcessingParameterNumber.Integer|None|False|None|None
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

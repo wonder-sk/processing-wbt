@@ -1,0 +1,6 @@
+MaxBranchLength
+Max Branch Length
+Branch length is used to map drainage divides or ridge lines
+QgsProcessingParameterRasterLayer|-i|Input raster DEM file|None|False
+QgsProcessingParameterBoolean|--log|Optional flag to request the output be log-transformed.|False|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

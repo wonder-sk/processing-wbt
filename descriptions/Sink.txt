@@ -1,0 +1,6 @@
+Sink
+Sink
+Identifies the depressions in a DEM, giving each feature a unique identifier
+QgsProcessingParameterRasterLayer|-i|Input raster DEM file|None|False
+QgsProcessingParameterBoolean|--zero_background|Flag indicating whether a background value of zero should be used.|False|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

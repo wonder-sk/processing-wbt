@@ -1,0 +1,8 @@
+NormalizedDifferenceVegetationIndex
+Normalized Difference Vegetation Index
+Calculates the normalized difference vegetation index (NDVI) from near-infrared and red imagery
+QgsProcessingParameterRasterLayer|--nir|Input near-infrared band image|None|False
+QgsProcessingParameterRasterLayer|--red|Input red band image|None|False
+QgsProcessingParameterNumber|--clip|Optional amount to clip the distribution tails by, in percent.|QgsProcessingParameterNumber.Double|0.0|False|None|None
+QgsProcessingParameterBoolean|--osavi|Optional flag indicating whether the optimized soil-adjusted veg index (OSAVI) should be used.|False|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

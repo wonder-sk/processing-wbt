@@ -1,0 +1,6 @@
+EqualTo
+Equal To
+Performs a equal-to comparison operation on two rasters or a raster and a constant value
+QgsProcessingParameterRasterLayer|--input1|Input raster file or constant value|None|False
+QgsProcessingParameterRasterLayer|--input2|Input raster file or constant value|None|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

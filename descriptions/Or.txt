@@ -1,0 +1,6 @@
+Or
+Or
+Performs a logical OR operator on two Boolean raster images
+QgsProcessingParameterRasterLayer|--input1|Input raster file|None|False
+QgsProcessingParameterRasterLayer|--input2|Input raster file|None|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

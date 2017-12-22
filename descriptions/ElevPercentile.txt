@@ -1,0 +1,8 @@
+ElevPercentile
+Elev Percentile
+Calculates the elevation percentile raster from a DEM
+QgsProcessingParameterRasterLayer|-i|Input raster DEM file|None|False
+QgsProcessingParameterNumber|--filterx|Size of the filter kernel in the x-direction.|QgsProcessingParameterNumber.Integer|11|False|None|None
+QgsProcessingParameterNumber|--filtery|Size of the filter kernel in the y-direction.|QgsProcessingParameterNumber.Integer|11|False|None|None
+QgsProcessingParameterNumber|--sig_digits|Number of significant digits.|QgsProcessingParameterNumber.Integer|2|False|None|None
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

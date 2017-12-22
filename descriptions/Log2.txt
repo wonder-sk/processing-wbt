@@ -1,0 +1,5 @@
+Log2
+Log
+Returns the base-2 logarithm of values in a raster
+QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

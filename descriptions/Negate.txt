@@ -1,0 +1,5 @@
+Negate
+Negate
+Changes the sign of values in a raster or the 0-1 values of a Boolean raster
+QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

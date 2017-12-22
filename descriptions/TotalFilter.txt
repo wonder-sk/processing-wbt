@@ -1,0 +1,7 @@
+TotalFilter
+Total Filter
+Performs a total filter on an input image
+QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
+QgsProcessingParameterNumber|--filterx|Size of the filter kernel in the x-direction.|QgsProcessingParameterNumber.Integer|11|False|None|None
+QgsProcessingParameterNumber|--filtery|Size of the filter kernel in the y-direction.|QgsProcessingParameterNumber.Integer|11|False|None|None
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

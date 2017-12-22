@@ -1,0 +1,6 @@
+SetNodataValue
+Set Nodata Value
+Assign a specified value in an input image to the NoData value
+QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
+QgsProcessingParameterNumber|--back_value|Background value to set to nodata.|QgsProcessingParameterNumber.Double|0.0|False|None|None
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

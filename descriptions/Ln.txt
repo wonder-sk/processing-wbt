@@ -1,0 +1,5 @@
+Ln
+Ln
+Returns the natural logarithm of values in a raster
+QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

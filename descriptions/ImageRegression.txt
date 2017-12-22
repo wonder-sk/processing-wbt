@@ -1,0 +1,8 @@
+ImageRegression
+Image Regression
+Performs image regression analysis on two input images
+QgsProcessingParameterRasterLayer|--i1|Input raster file (independent variable, X)|None|False
+QgsProcessingParameterRasterLayer|--i2|Input raster file (dependent variable, Y)|None|False
+QgsProcessingParameterBoolean|--standardize|Optional flag indicating whether to standardize the residuals map.|False|False
+QgsProcessingParameterFileDestination|-o|Output HTML file for regression summary report|HTML files (*.html *.HTML)|None|False
+QgsProcessingParameterRasterDestination|--out_residuals|Output raster regression resdidual file|None|False

@@ -1,0 +1,8 @@
+RemoveShortStreams
+Remove Short Streams
+Removes short first-order streams from a stream network
+QgsProcessingParameterRasterLayer|--d8_pntr|Input raster D8 pointer file|None|False
+QgsProcessingParameterRasterLayer|--streams|Input raster streams file|None|False
+QgsProcessingParameterNumber|--min_length|Minimum tributary length (in map units) used for network prunning.|QgsProcessingParameterNumber.Double|None|False|None|None
+QgsProcessingParameterBoolean|--esri_pntr|D8 pointer uses the ESRI style scheme.|False|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

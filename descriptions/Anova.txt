@@ -1,0 +1,6 @@
+Anova
+Anova
+Performs an analysis of variance (ANOVA) test on a raster dataset
+QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
+QgsProcessingParameterRasterLayer|--features|Feature definition (or class) raster|None|False
+QgsProcessingParameterFileDestination|-o|Output HTML file|HTML files (*.html *.HTML)|None|False

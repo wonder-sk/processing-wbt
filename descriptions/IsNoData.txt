@@ -1,0 +1,5 @@
+IsNoData
+Is No Data
+Identifies NoData valued pixels in an image
+QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

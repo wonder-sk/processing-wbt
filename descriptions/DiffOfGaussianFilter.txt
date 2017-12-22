@@ -1,0 +1,7 @@
+DiffOfGaussianFilter
+Diff Of Gaussian Filter
+Performs a Difference of Gaussian (DoG) filter on an image
+QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
+QgsProcessingParameterNumber|--sigma1|Standard deviation distance in pixels.|QgsProcessingParameterNumber.Double|2.0|False|None|None
+QgsProcessingParameterNumber|--sigma2|Standard deviation distance in pixels.|QgsProcessingParameterNumber.Double|4.0|False|None|None
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

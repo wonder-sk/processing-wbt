@@ -1,0 +1,12 @@
+LidarPointDensity
+Lidar Point Density
+Calculates the spatial pattern of point density for a LiDAR data set
+QgsProcessingParameterFile|-i|Input LiDAR file (including extension)|QgsProcessingParameterFile.File|las|None|False
+QgsProcessingParameterEnum|--returns|Point return types to include; options are 'all' (default), 'last', 'first'|all;last;first|False|0|False
+QgsProcessingParameterNumber|--resolution|Output raster's grid resolution.|QgsProcessingParameterNumber.Double|1.0|False|None|None
+QgsProcessingParameterNumber|--radius|Search Radius.|QgsProcessingParameterNumber.Double|2.5|False|None|None
+QgsProcessingParameterString|--exclude_cls|Optional exclude classes from interpolation; Valid class values range from 0 to 18, based on LAS specifications. Example, --exclude_cls='3,4,5,6,7,18'|None|False|False
+QgsProcessingParameterString|--palette|Optional palette name (for use with Whitebox raster files)|None|False|False
+QgsProcessingParameterNumber|--minz|Optional minimum elevation for inclusion in interpolation.|QgsProcessingParameterNumber.Double|None|False|None|None
+QgsProcessingParameterNumber|--maxz|Optional maximum elevation for inclusion in interpolation.|QgsProcessingParameterNumber.Double|None|False|None|None
+QgsProcessingParameterRasterDestination|-o|Output raster file (including extension)|None|False

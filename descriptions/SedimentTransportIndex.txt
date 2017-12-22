@@ -1,0 +1,8 @@
+SedimentTransportIndex
+Sediment Transport Index
+Calculates the sediment transport index
+QgsProcessingParameterRasterLayer|--sca|Input raster specific contributing area (SCA) file|None|False
+QgsProcessingParameterRasterLayer|--slope|Input raster slope file|None|False
+QgsProcessingParameterNumber|--sca_exponent|SCA exponent value.|QgsProcessingParameterNumber.Double|0.4|False|None|None
+QgsProcessingParameterNumber|--slope_exponent|Slope exponent value.|QgsProcessingParameterNumber.Double|1.3|False|None|None
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

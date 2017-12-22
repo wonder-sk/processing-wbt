@@ -1,0 +1,6 @@
+RobertsCrossFilter
+Roberts Cross Filter
+Performs a Robert's cross edge-detection filter on an image
+QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
+QgsProcessingParameterNumber|--clip|Optional amount to clip the distribution tails by, in percent.|QgsProcessingParameterNumber.Double|0.0|False|None|None
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

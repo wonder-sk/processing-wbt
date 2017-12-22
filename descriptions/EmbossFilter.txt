@@ -1,0 +1,7 @@
+EmbossFilter
+Emboss Filter
+Performs an emboss filter on an image, similar to a hillshade operation
+QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
+QgsProcessingParameterEnum|--direction|Direction of reflection; options include 'n', 's', 'e', 'w', 'ne', 'se', 'nw', 'sw|n;s;e;w;ne;se;nw;sw|False|0|False
+QgsProcessingParameterNumber|--clip|Optional amount to clip the distribution tails by, in percent.|QgsProcessingParameterNumber.Double|0.0|False|None|None
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

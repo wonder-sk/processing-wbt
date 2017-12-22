@@ -1,0 +1,5 @@
+LineThinning
+Line Thinning
+Performs line thinning a on Boolean raster image; intended to be used with the RemoveSpurs tool
+QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

@@ -1,0 +1,5 @@
+ThickenRasterLine
+Thicken Raster Line
+Thickens single-cell wide lines within a raster image
+QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

@@ -1,0 +1,7 @@
+JensonSnapPourPoints
+Jenson Snap Pour Points
+Moves outlet points used to specify points of interest in a watershedding operation to the nearest stream cell
+QgsProcessingParameterRasterLayer|--pour_pts|Input raster pour points (outlet) file|None|False
+QgsProcessingParameterRasterLayer|--streams|Input raster streams file|None|False
+QgsProcessingParameterNumber|--snap_dist|Maximum snap distance in map units.|QgsProcessingParameterNumber.Double|None|False|None|None
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

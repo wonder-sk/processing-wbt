@@ -1,0 +1,5 @@
+AverageFlowpathSlope
+Average Flowpath Slope
+Measures the average slope gradient from each grid cell to all upslope divide cells
+QgsProcessingParameterRasterLayer|-i|Input raster DEM file|None|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

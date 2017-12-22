@@ -1,0 +1,7 @@
+DownslopeIndex
+Downslope Index
+Calculates the Hjerdt et al. (2004) downslope index
+QgsProcessingParameterRasterLayer|-i|Input raster DEM file|None|False
+QgsProcessingParameterNumber|--drop|Vertical drop value (default is 2.0).|QgsProcessingParameterNumber.Double|2.0|False|None|None
+QgsProcessingParameterEnum|--out_type|Output type, options include 'tangent', 'degrees', 'radians', 'distance' (default is 'tangent')|tangent;degrees;radians;distance|False|0|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

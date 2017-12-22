@@ -1,0 +1,6 @@
+GaussianFilter
+Gaussian Filter
+Performs a Gaussian filter on an image
+QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
+QgsProcessingParameterNumber|--sigma|Standard deviation distance in pixels.|QgsProcessingParameterNumber.Double|0.75|False|None|None
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

@@ -1,0 +1,7 @@
+BilateralFilter
+Bilateral Filter
+A bilateral filter is an edge-preserving smoothing filter introduced by Tomasi and Manduchi (1998)
+QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
+QgsProcessingParameterNumber|--sigma_dist|Standard deviation in distance in pixels.|QgsProcessingParameterNumber.Double|0.75|False|None|None
+QgsProcessingParameterNumber|--sigma_int|Standard deviation in intensity in pixels.|QgsProcessingParameterNumber.Double|1.0|False|None|None
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

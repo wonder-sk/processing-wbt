@@ -1,0 +1,6 @@
+D8Pointer
+D Pointer
+Calculates a D8 flow pointer raster from an input DEM
+QgsProcessingParameterRasterLayer|-i|Input raster DEM file|None|False
+QgsProcessingParameterBoolean|--esri_pntr|D8 pointer uses the ESRI style scheme.|False|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

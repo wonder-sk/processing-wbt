@@ -1,0 +1,6 @@
+HistogramMatching
+Histogram Matching
+Alters the statistical distribution of a raster image matching it to a specified PDF
+QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
+QgsProcessingParameterFile|--histo_file|Input reference probability distribution function (pdf) text file|QgsProcessingParameterFile.File|txt|None|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

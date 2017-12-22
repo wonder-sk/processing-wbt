@@ -1,0 +1,8 @@
+LidarSegmentation
+Lidar Segmentation
+Segments a LiDAR point cloud based on normal vectors
+QgsProcessingParameterFile|-i|Input LiDAR file|QgsProcessingParameterFile.File|las|None|False
+QgsProcessingParameterNumber|--dist|Search Radius.|QgsProcessingParameterNumber.Double|5.0|False|None|None
+QgsProcessingParameterNumber|--norm_diff|Maximum difference in normal vectors, in degrees.|QgsProcessingParameterNumber.Double|10.0|False|None|None
+QgsProcessingParameterNumber|--maxzdiff|Maximum difference in elevation (z units) between neighbouring points of the same segment.|QgsProcessingParameterNumber.Double|1.0|False|None|None
+QgsProcessingParameterFileDestination|-o|Output file|LIDAR files (*.las *.LAS)|None|False

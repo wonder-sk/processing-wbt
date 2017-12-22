@@ -1,0 +1,5 @@
+NumDownslopeNeighbours
+Num Downslope Neighbours
+Calculates the number of downslope neighbours to each grid cell in a DEM
+QgsProcessingParameterRasterLayer|-i|Input raster DEM file|None|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

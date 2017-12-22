@@ -1,0 +1,6 @@
+Basins
+Basins
+Identifies drainage basins that drain to the DEM edge
+QgsProcessingParameterRasterLayer|--d8_pntr|Input raster D8 pointer file|None|False
+QgsProcessingParameterBoolean|--esri_pntr|D8 pointer uses the ESRI style scheme.|False|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

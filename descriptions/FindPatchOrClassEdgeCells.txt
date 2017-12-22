@@ -1,0 +1,5 @@
+FindPatchOrClassEdgeCells
+Find Patch Or Class Edge Cells
+Finds all cells located on the edge of patch or class features
+QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

@@ -1,0 +1,6 @@
+EdgeProportion
+Edge Proportion
+Calculate the proportion of cells in a raster polygon that are edge cells
+QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
+QgsProcessingParameterBoolean|--output_text|flag indicating whether a text report should also be output.|False|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

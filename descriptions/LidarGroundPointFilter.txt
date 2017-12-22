@@ -1,0 +1,8 @@
+LidarGroundPointFilter
+Lidar Ground Point Filter
+Identifies ground points within LiDAR dataset using a slope-based method
+QgsProcessingParameterFile|-i|Input LiDAR file|QgsProcessingParameterFile.File|las|None|False
+QgsProcessingParameterNumber|--radius|Search Radius.|QgsProcessingParameterNumber.Double|2.0|False|None|None
+QgsProcessingParameterNumber|--slope_threshold|Maximum inter-point slope to be considered an off-terrain point.|QgsProcessingParameterNumber.Double|45.0|False|None|None
+QgsProcessingParameterNumber|--height_threshold|Inter-point height difference to be considered an off-terrain point.|QgsProcessingParameterNumber.Double|1.0|False|None|None
+QgsProcessingParameterFileDestination|-o|Output LiDAR file|LIDAR files (*.las *.LAS)|None|False

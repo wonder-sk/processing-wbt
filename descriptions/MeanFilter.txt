@@ -1,0 +1,7 @@
+MeanFilter
+Mean Filter
+Performs a mean filter (low-pass filter) on an input image
+QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
+QgsProcessingParameterNumber|--filterx|Size of the filter kernel in the x-direction.|QgsProcessingParameterNumber.Integer|3|False|None|None
+QgsProcessingParameterNumber|--filtery|Size of the filter kernel in the y-direction.|QgsProcessingParameterNumber.Integer|3|False|None|None
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

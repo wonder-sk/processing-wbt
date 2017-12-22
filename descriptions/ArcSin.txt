@@ -1,0 +1,5 @@
+ArcSin
+Arc Sin
+Returns the inverse sine (arcsin) of each values in a raster
+QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

@@ -1,0 +1,8 @@
+TopologicalStreamOrder
+Topological Stream Order
+Assigns each link in a stream network its topological order
+QgsProcessingParameterRasterLayer|--d8_pntr|Input raster D8 pointer file|None|False
+QgsProcessingParameterRasterLayer|--streams|Input raster streams file|None|False
+QgsProcessingParameterBoolean|--esri_pntr|D8 pointer uses the ESRI style scheme.|False|False
+QgsProcessingParameterBoolean|--zero_background|Flag indicating whether a background value of zero should be used.|False|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

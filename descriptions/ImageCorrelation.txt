@@ -1,0 +1,5 @@
+ImageCorrelation
+Image Correlation
+Performs image correlation on two or more input images
+QgsProcessingParameterMultipleLayers|-i|Input raster files|3|None|False
+QgsProcessingParameterFileDestination|-o|Output HTML file (default name will be based on input file if unspecified)|HTML files (*.html *.HTML)|None|False

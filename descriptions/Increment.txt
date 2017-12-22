@@ -1,0 +1,5 @@
+Increment
+Increment
+Increases the values of each grid cell in an input raster by 1.0
+QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

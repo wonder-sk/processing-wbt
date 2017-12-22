@@ -1,0 +1,5 @@
+SquareRoot
+Square Root
+Returns the square root of the values in a raster
+QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

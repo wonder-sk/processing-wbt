@@ -1,0 +1,6 @@
+Quantiles
+Quantiles
+Tranforms raster values into quantiles
+QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
+QgsProcessingParameterNumber|--num_quantiles|Number of quantiles.|QgsProcessingParameterNumber.Integer|4|False|None|None
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

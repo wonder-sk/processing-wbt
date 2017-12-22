@@ -1,0 +1,7 @@
+DirectDecorrelationStretch
+Direct Decorrelation Stretch
+Performs a direct decorrelation stretch enchancement on a colour-composite image of multispectral data
+QgsProcessingParameterRasterLayer|-i|Input colour composite image file|None|False
+QgsProcessingParameterNumber|-k|Achromatic factor (k) ranges between 0 (no effect) and 1 (full saturation stretch), although typical values range from 0.3 to 0.7.|QgsProcessingParameterNumber.Double|0.5|False|None|None
+QgsProcessingParameterNumber|--clip|Optional percent to clip the upper tail by during the stretch.|QgsProcessingParameterNumber.Double|1.0|False|None|None
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

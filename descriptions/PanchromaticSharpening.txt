@@ -1,0 +1,10 @@
+PanchromaticSharpening
+Panchromatic Sharpening
+Increases the spatial resolution of image data by combining multispectral bands with panchromatic data
+QgsProcessingParameterRasterLayer|--red|Input red band image file. Optionally specified if colour-composite not specified|None|False
+QgsProcessingParameterRasterLayer|--green|Input green band image file. Optionally specified if colour-composite not specified|None|False
+QgsProcessingParameterRasterLayer|--blue|Input blue band image file. Optionally specified if colour-composite not specified|None|False
+QgsProcessingParameterRasterLayer|--composite|Input colour-composite image file. Only used if individual bands are not specified|None|False
+QgsProcessingParameterRasterLayer|--pan|Input panchromatic band file|None|False
+QgsProcessingParameterEnum|--method|Options include 'brovey' (default) and 'ihs|brovey;ihs|False|0|False
+QgsProcessingParameterRasterDestination|-o|Output colour composite file|None|False

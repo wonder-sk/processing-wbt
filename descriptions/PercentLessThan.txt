@@ -1,0 +1,6 @@
+PercentLessThan
+Percent Less Than
+Calculates the percentage of a raster stack that have cell values less than an input on a cell-by-cell basis
+QgsProcessingParameterMultipleLayers|-i|Input raster files|3|None|False
+QgsProcessingParameterRasterLayer|--comparison|Input comparison raster file|None|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

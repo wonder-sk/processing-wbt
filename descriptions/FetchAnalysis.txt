@@ -1,0 +1,7 @@
+FetchAnalysis
+Fetch Analysis
+Performs an analysis of fetch or upwind distance to an obstacle
+QgsProcessingParameterRasterLayer|-i|Input raster DEM file|None|False
+QgsProcessingParameterNumber|--azimuth|Wind azimuth in degrees in degrees.|QgsProcessingParameterNumber.Double|0.0|False|None|None
+QgsProcessingParameterNumber|--hgt_inc|Height increment value.|QgsProcessingParameterNumber.Double|0.05|False|None|None
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

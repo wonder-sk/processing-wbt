@@ -1,0 +1,8 @@
+ExtractValleys
+Extract Valleys
+Identifies potential valley bottom grid cells based on local topolography alone
+QgsProcessingParameterRasterLayer|-i|Input raster DEM file|None|False
+QgsProcessingParameterEnum|--variant|Options include 'lq' (lower quartile), 'JandR' (Johnston and Rosenfeld), and 'PandD' (Peucker and Douglas); default is 'lq'|Lower Quartile;Johnston and Rosenfeld;Peucker and Douglas|False|0|False
+QgsProcessingParameterBoolean|--line_thin|Optional flag indicating whether post-processing line-thinning should be performed.|True|False
+QgsProcessingParameterNumber|--filter|Optional argument (only used when variant='lq') providing the filter size, in grid cells, used for lq-filtering (default is 5).|QgsProcessingParameterNumber.Integer|5|False|None|None
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

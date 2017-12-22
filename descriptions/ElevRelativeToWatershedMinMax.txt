@@ -1,0 +1,6 @@
+ElevRelativeToWatershedMinMax
+Elev Relative To Watershed Min Max
+Calculates the elevation of a location relative to the minimum and maximum elevations in a watershed
+QgsProcessingParameterRasterLayer|-i|Input raster DEM file|None|False
+QgsProcessingParameterRasterLayer|--watersheds|Input raster watersheds file|None|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

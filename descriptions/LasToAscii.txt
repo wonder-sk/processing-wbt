@@ -1,0 +1,4 @@
+LasToAscii
+Las To Ascii
+Converts one or more LAS files into ASCII text files
+QgsProcessingParameterMultipleLayers|-i|Input LiDAR files|3|None|False

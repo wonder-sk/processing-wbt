@@ -1,0 +1,5 @@
+FindNoFlowCells
+Find No Flow Cells
+Finds grid cells with no downslope neighbours
+QgsProcessingParameterRasterLayer|-i|Input raster DEM file|None|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

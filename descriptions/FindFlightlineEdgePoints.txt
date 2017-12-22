@@ -1,0 +1,5 @@
+FindFlightlineEdgePoints
+Find Flightline Edge Points
+Identifies points along a flightline's edge in a LAS file
+QgsProcessingParameterFile|-i|Input LiDAR file|QgsProcessingParameterFile.File|las|None|False
+QgsProcessingParameterFileDestination|-o|Output file|LIDAR files (*.las *.LAS)|None|False

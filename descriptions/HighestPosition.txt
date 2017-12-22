@@ -1,0 +1,5 @@
+HighestPosition
+Highest Position
+Identifies the stack position of the maximum value within a raster stack on a cell-by-cell basis
+QgsProcessingParameterMultipleLayers|-i|Input raster files|3|None|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

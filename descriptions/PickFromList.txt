@@ -1,0 +1,6 @@
+PickFromList
+Pick From List
+Outputs the value from a raster stack specified by a position raster
+QgsProcessingParameterMultipleLayers|-i|Input raster files|3|None|False
+QgsProcessingParameterRasterLayer|--pos_input|Input position raster file|None|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

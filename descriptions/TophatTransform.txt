@@ -1,0 +1,8 @@
+TophatTransform
+Tophat Transform
+Performs either a white or black top-hat transform on an input image
+QgsProcessingParameterRasterLayer|-i|Input raster file|None|False
+QgsProcessingParameterNumber|--filterx|Size of the filter kernel in the x-direction.|QgsProcessingParameterNumber.Integer|11|False|None|None
+QgsProcessingParameterNumber|--filtery|Size of the filter kernel in the y-direction.|QgsProcessingParameterNumber.Integer|11|False|None|None
+QgsProcessingParameterEnum|--variant|Optional variant value. Options include 'white' and 'black'|white;black|False|0|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False

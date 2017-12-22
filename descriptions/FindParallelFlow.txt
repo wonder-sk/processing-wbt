@@ -1,0 +1,6 @@
+FindParallelFlow
+Find Parallel Flow
+Finds areas of parallel flow in D8 flow direction rasters
+QgsProcessingParameterRasterLayer|--d8_pntr|Input D8 pointer raster file|None|False
+QgsProcessingParameterRasterLayer|--streams|Input raster streams file|None|False
+QgsProcessingParameterRasterDestination|-o|Output raster file|None|False
