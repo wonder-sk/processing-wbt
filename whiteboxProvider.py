@@ -64,7 +64,7 @@ class WhiteboxProvider(QgsProcessingProvider):
         ProcessingConfig.addSetting(Setting(self.name(),
                                             whiteboxUtils.WHITEBOX_ACTIVE,
                                             self.tr('Activate'),
-                                            True))
+                                            False))
         ProcessingConfig.addSetting(Setting(self.name(),
                                             whiteboxUtils.WHITEBOX_EXECUTABLE,
                                             self.tr('Whitebox Tools executable'),
