@@ -123,5 +123,5 @@ class WhiteboxProvider(QgsProcessingProvider):
 
     def tr(self, string, context=''):
         if context == '':
-            context = 'WhiteBoxAlgorithmProvider'
+            context = 'WhiteBoxProvider'
         return QCoreApplication.translate(context, string)
