@@ -12,9 +12,9 @@ tags=analysis,processing
 author=Alexander Bruy
 email=alexander.bruy@gmail.com
 
-homepage=https://github.com/alexbruy/processing_whitebox
-tracker=https://github.com/alexbruy/processing_whitebox/issues
-repository=https://github.com/alexbruy/processing_whitebox
+homepage=https://github.com/alexbruy/processing-whitebox
+tracker=https://github.com/alexbruy/processing-whitebox/issues
+repository=https://github.com/alexbruy/processing-whitebox
 
 experimental=True
 deprecated=False
