@@ -4,7 +4,8 @@ description=Advanced geospatial data analysis engine
 about=Various spatial analysis tools
 category=Plugins
 version=0.1.0
-qgisMinimumVersion=2.99
+qgisMinimumVersion=3.0
+qgisMaximumVersion=3.99
 
 icon=icons/whiteboxtools.png
 tags=analysis,processing

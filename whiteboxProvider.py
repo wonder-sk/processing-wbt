@@ -30,7 +30,7 @@ import os
 from qgis.PyQt.QtGui import QIcon
 from qgis.PyQt.QtCore import QCoreApplication
 
-from qgis.core import QgsProcessingProvider, QgsMessageLog
+from qgis.core import QgsProcessingProvider, QgsMessageLog, Qgis
 
 from processing.core.ProcessingConfig import ProcessingConfig, Setting
 
@@ -113,10 +113,10 @@ class WhiteboxProvider(QgsProcessingProvider):
                         self.algs.append(alg)
                     else:
                         QgsMessageLog.logMessage(self.tr('Could not load WhiteBox Tools algorithm from file: {}'.format(descriptionFile)),
-                                                 self.tr('Processing'), QgsMessageLog.CRITICAL)
+                                                 self.tr('Processing'), Qgis.Critical)
                 except Exception as e:
                     QgsMessageLog.logMessage(self.tr('Could not load WhiteBox Tools algorithm from file: {}\n{}'.format(descriptionFile, str(e))),
-                                             self.tr('Processing'), QgsMessageLog.CRITICAL)
+                                             self.tr('Processing'), Qgis.Critical)
 
         for a in self.algs:
             self.addAlgorithm(a)

@@ -29,7 +29,7 @@ import os
 import re
 import subprocess
 
-from qgis.core import QgsMessageLog, QgsProcessingFeedback
+from qgis.core import QgsMessageLog, QgsProcessingFeedback, Qgis
 from processing.core.ProcessingLog import ProcessingLog
 from processing.core.ProcessingConfig import ProcessingConfig
 
@@ -76,7 +76,7 @@ def execute(commands, feedback=None):
         feedback = QgsProcessingFeedback()
 
     fused_command = ' '.join([str(c) for c in commands])
-    QgsMessageLog.logMessage(fused_command, 'Processing', QgsMessageLog.INFO)
+    QgsMessageLog.logMessage(fused_command, 'Processing', Qgis.Info)
     feedback.pushInfo('WhiteBox Tools command:')
     feedback.pushCommandInfo(fused_command)
     feedback.pushInfo('WhiteBox Tools command output:')
@@ -102,4 +102,4 @@ def execute(commands, feedback=None):
             pass
 
     if ProcessingConfig.getSetting(WHITEBOX_VERBOSE):
-        QgsMessageLog.logMessage('\n'.join(loglines), 'Processing', QgsMessageLog.INFO)
+        QgsMessageLog.logMessage('\n'.join(loglines), 'Processing', Qgis.Info)
